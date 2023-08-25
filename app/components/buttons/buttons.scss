@@ -1,0 +1,13 @@
+.btn {
+  padding: 2rem;
+  margin: 40px;
+
+  &.dark {
+    background-color: $primary;
+    color: blue;
+  }
+  &.dark {
+    background-color: red;
+    color: white;
+  }
+}
