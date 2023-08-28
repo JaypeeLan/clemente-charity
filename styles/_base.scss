@@ -1,12 +1,12 @@
 :root {
   &.light {
     background-color: white;
-    color: black;
+    color: $black;
   }
 
   &.dark {
     background-color: $primary;
-    color: black;
+    color: $black;
   }
 }
 
@@ -18,4 +18,16 @@
 
 body {
   box-sizing: inherit;
+  // font-family: "Raleway", sans-serif;
+}
+
+main {
+  margin-top: 80px;
+}
+
+.toggle-btn {
+  border: none;
+  font-size: 1.5rem;
+  color: blue;
+  margin-left: 1rem;
 }

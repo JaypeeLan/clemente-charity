@@ -1,7 +1,16 @@
-@import "./colors";
-@import "./breakpoints";
-@import "./mixins";
-@import "./typography";
-@import "./base";
+@import "colors";
+// @import "variables";
+@import "responsiveness.scss";
+@import "mixins";
+// @import "font";
+// @import "helpers";
+@import "base";
+
+@import "typography";
+// @import "keyframes";
+
+// @import "links";
+// @import "loader";
 
 @import "/app/components//buttons/buttons";
+@import "/app/components//navbar/navbar";
