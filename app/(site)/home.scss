@@ -1,0 +1,19 @@
+#home {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+.homepage {
+  background: url("/assets/home-hero-bg.jpg") center center/cover no-repeat
+    fixed;
+  background-size: cover;
+
+  &-title {
+    color: $white;
+
+    &.dark {
+      color: $title;
+    }
+  }
+}

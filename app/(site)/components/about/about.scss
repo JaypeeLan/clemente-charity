@@ -1,0 +1,12 @@
+.about {
+  @include flex-container(space-around);
+  background-color: $bg;
+  padding: 0 5%;
+
+  &-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px;
+  }
+}

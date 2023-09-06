@@ -1,13 +1,41 @@
 .btn {
-  padding: 2rem;
-  margin: 40px;
+  // padding: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  width: max-content;
+  border-radius: 5px;
+  outline: none;
+  border: none;
 
-  &.dark {
+  &.light {
     background-color: $primary;
-    color: blue;
+    color: $primary;
   }
   &.dark {
     background-color: red;
     color: white;
+  }
+  &.primary {
+    background-color: $white;
+    color: $primary;
+    padding: 0.8rem 1.2rem;
+
+    &:hover {
+      background-color: $primary;
+      color: $white;
+    }
+  }
+  &.secondary {
+    background-color: $primary;
+    color: $bg-alt;
+
+    padding: 0.8rem 1.2rem;
+
+    &:hover {
+      background-color: $bg-alt;
+      color: $primary;
+    }
   }
 }

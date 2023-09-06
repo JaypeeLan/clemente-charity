@@ -1,0 +1,38 @@
+.volunteer {
+  background-color: $bg;
+
+  div:last-child {
+    // background-color: aqua;
+  }
+}
+
+.accountability {
+  @include flex-container();
+  gap: 2rem;
+  background-color: $black;
+  color: $white;
+  padding: 5% 5%;
+
+  &-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 800px;
+  }
+}
+
+.contribute {
+  width: 80%;
+  max-width: 900px;
+  margin: 2rem auto;
+  text-align: center;
+  background-color: bisque;
+  padding: 2rem;
+  border-radius: 2rem;
+
+  &-btns {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

@@ -1,0 +1,60 @@
+.about-page {
+  padding: 1rem 4rem;
+  .header-section {
+    position: relative;
+    > div {
+      min-height: 40vh;
+      @include grid(4rem);
+
+      > div {
+        height: 50%;
+        @include flex-container(space-between, flex-start);
+        flex-direction: column;
+
+        &:last-child {
+          padding: 1rem;
+        }
+      }
+    }
+  }
+
+  .header-title {
+    color: $title;
+    text-transform: uppercase;
+  }
+
+  .sub-title {
+    color: $title;
+  }
+
+  .paragraphs {
+    .paragraph {
+      color: $title;
+      text-align: left;
+    }
+  }
+}
+
+.team-photograph {
+  text-align: center;
+  width: 100%;
+}
+
+.mission {
+  @include flex-container($gap: 20px, $flex-direction: column);
+  text-align: center;
+}
+
+.aims {
+  @include flex-container($gap: 1rem, $flex-direction: column);
+  text-align: center;
+}
+
+.team {
+  @include flex-container($gap: 3rem, $flex-direction: column);
+
+  &-group {
+    width: 100%;
+    @include grid(1rem);
+  }
+}
