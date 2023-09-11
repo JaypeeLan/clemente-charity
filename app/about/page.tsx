@@ -6,17 +6,18 @@ const Page = () => {
       <section className="about-header">
         <div className="header-section">
           <div>
-            <div>
-              <h3 className="header-title">Know about us</h3>
-              <h1 className="sub-title">
-                We are a non-governmental organization
-              </h1>
+            <div className="start">
+              <h4 className="header-title">Know about us</h4>
+              <h3 className="sub-title pt-5">
+                We are a non- <br /> governmental organization
+              </h3>
             </div>
-            <div className="paragraphs">
-              <p className="paragraph">
+            <div className="paragraphs mb-5">
+              <h4 className="paragraph">
                 Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
                 Nunc ut sem vitae risus tristique posuere.
-              </p>
+              </h4>
+              <br />
               <p className="paragraph">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
@@ -27,49 +28,42 @@ const Page = () => {
             </div>
           </div>
         </div>
-
-        <div className="team-photograph">
+        <div className="team-photograph pt-3">
           <Image
             src="/assets/home-hero-bg.jpg"
-            width={500}
-            height={300}
+            width={1200}
+            height={400}
             alt="team photo"
           />
         </div>
       </section>
-      <section className="mission">
-        <h3>Aims and Objectives</h3>
+
+      <div className="mission">
         <div className="aims">
+        <h4>OUR MISSION</h4>
           <div className="aims-objectives">
             <h4>
-              We make sure to provide inclusive care for children with special
-              needs
+            We make sure to provide inclusive care for children with special needs
             </h4>
             <p>
               {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
-            </p>
-          </div>
-          <div className="aims-objectives">
-            <h4>
-              We make sure to provide inclusive care for children with special
-              needs
-            </h4>
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Suspendisse varius enim in eros elementum tristique. Duis cursus,
-              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
-              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
-              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
             </p>
           </div>
         </div>
-      </section>
+        <div className="aims">
+        <h4>OUR VISION</h4>
+          <div className="aims-objectives">
+            <h4>
+            Provide more inclusive care to children around the world
+            </h4>
+            <p>
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere..
+            </p>
+          </div>
+        </div>
+      </div>
 
       <section className="team">
         <h2>Aims and Objectives</h2>
