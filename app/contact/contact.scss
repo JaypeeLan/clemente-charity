@@ -16,3 +16,35 @@
     }
   }
 }
+.contact-section {
+  form {
+    text-align: center;
+  }
+}
+
+.contact-form {
+  @include grid();
+
+  > div {
+    width: 50%;
+  }
+}
+
+.input-field {
+  text-align: left;
+  label {
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  input {
+    display: block;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    width: 100%;
+  }
+
+  &__message {
+    text-align: center;
+  }
+}
