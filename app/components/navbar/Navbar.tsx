@@ -15,7 +15,7 @@ export default function Navbar() {
   // Add an event listener to track scrolling
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 80) {
+      if (window.scrollY > 60) {
         setScrolled(true);
       } else {
         setScrolled(false);
@@ -31,7 +31,6 @@ export default function Navbar() {
   const menuItems = [
     { text: "Home", href: "/" },
     { text: "About Us", href: "/about" },
-    { text: "What We Do", href: "/what-we-do" },
     { text: "Media", href: "/media" },
     { text: "Contact Us", href: "/contact" },
   ];
@@ -63,7 +62,9 @@ export default function Navbar() {
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
             <div className="donate">
-              <button>Donate</button>
+              <Link href="/donate">
+                <>Donate</>
+              </Link>
             </div>
             <ThemeToggleBtn />
           </div>

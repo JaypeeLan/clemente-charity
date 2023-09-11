@@ -1,8 +1,37 @@
-// import Image from "next/image";
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
+import Buttons from "../components/buttons/Buttons";
 
-const page = () => {
+const InputFormFields = ({
+  label,
+  value,
+  setValue,
+}: {
+  label: string;
+  value: string;
+  setValue: (e: any) => void;
+}) => {
+  return (
+    <div className="input-field">
+      <label htmlFor="firstName">{label}</label>
+      <input
+        type="text"
+        name="firstName"
+        id="firstName"
+        value={value}
+        onChange={setValue}
+      />
+    </div>
+  );
+};
+
+const Contact = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+  };
   return (
     <div className="contact-page">
       <section className="contact">
@@ -53,8 +82,52 @@ const page = () => {
           </>
         </div>
       </section>
+
+      <section className="contact-section">
+        <form action="" onSubmit={handleSubmit}>
+          <div className="contact-form">
+            <div className="contact-form__left">
+              <InputFormFields
+                label="First Name"
+                setValue={(e: any) => setFirstName(e.target.value)}
+                value={firstName}
+              />
+              <InputFormFields
+                label="Email"
+                setValue={(e: any) => setFirstName(e.target.value)}
+                value={firstName}
+              />
+            </div>
+            <div className="contact-form__right">
+              <InputFormFields
+                label="Last Name"
+                setValue={(e: any) => setLastName(e.target.value)}
+                value={lastName}
+              />
+              <InputFormFields
+                label="Subject"
+                setValue={(e: any) => setLastName(e.target.value)}
+                value={lastName}
+              />
+            </div>
+          </div>
+          <div className="input-field__message">
+            <label htmlFor="message">Message</label>
+            <textarea
+              cols={30}
+              rows={10}
+              name="message"
+              id="message"
+              placeholder="Enter message"
+            />
+          </div>
+          <Buttons className="secondary" type="submit">
+            Submit
+          </Buttons>
+        </form>
+      </section>
     </div>
   );
 };
 
-export default page;
+export default Contact;
