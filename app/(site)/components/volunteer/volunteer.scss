@@ -1,32 +1,22 @@
 .volunteer {
-  background-color: $bg;
+  background-color: $white;
 
   div:last-child {
     // background-color: aqua;
   }
 }
-
-.accountability {
-  @include flex-container();
-  gap: 2rem;
-  background-color: $black;
-  color: $white;
-  padding: 5% 5%;
-
-  &-text {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 800px;
-  }
+.chartside{
+  color: $white !important;
 }
-
+.grid-item1 p{
+  color:$white;
+}
 .contribute {
   width: 80%;
   max-width: 900px;
   margin: 2rem auto;
   text-align: center;
-  background-color: bisque;
+  background: url("/assets/fullpage.jpg") center center/cover no-repeat;
   padding: 2rem;
   border-radius: 2rem;
 
@@ -35,4 +25,36 @@
     justify-content: center;
     gap: 2rem;
   }
+}
+.grid-2{
+  padding: 2rem 4rem;
+  background: $bg-dark;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .grid-item1{
+    flex-basis: 58%;
+    text-align: start;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+  }
+  .grid-item2{
+    flex-basis: 38%;
+    text-align: start;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+  }
+.mt-5{
+  margin-top: 50px;
+}
+.mb-5{
+  margin-bottom: 50px;
 }

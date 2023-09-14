@@ -1,7 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
+import Link from "next/link";
 import Buttons from "../components/buttons/Buttons";
+import Image from "next/image"
 
 const InputFormFields = ({
   label,
@@ -29,18 +31,20 @@ const InputFormFields = ({
 const Contact = () => {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const handleSubmit = (e: any) => {
     e.preventDefault();
   };
   return (
     <div className="contact-page">
-      <section className="contact">
+      <div className="contact ">
         <div className="contact-hero">
           <>
-            <div>
-              <p className="">Contact us</p>
-              <h2 className="">We&#039;d love to hear from you</h2>
-              <p>
+            <div className="cont">
+              <h5 className="">CONTACT</h5>
+              <h2 >We&#039;d love to hear from you</h2>
+              <p className="rogue">
                 Have any question in mind or want to enquire? Please feel free
                 to contact us through the form or the following details.
               </p>
@@ -49,7 +53,8 @@ const Contact = () => {
               <div>
                 <h4 className="">Let us talk</h4>
                 <p className="">
-                  +234 09012346514 <span>hello@largerthani.com</span>{" "}
+                +447825611810, +234 9095347896 <br />
+                <span>clementecharityfoundation23@gmail.com</span>{" "}
                 </p>
               </div>
               {/* ------------------ */}
@@ -71,34 +76,41 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div>
-                <FiLinkedin />
-                <FiFacebook />
-
+              <div className="spc">
+                <div className="social"><FiLinkedin /></div>
+                <div className="social"><FiFacebook /></div>
+                <div className="social"><Link href="https://instagram.com/clemente_charity_foundation?igshid=MzRlODBiNWFlZA==">
                 <FiInstagram />
+                </Link></div>
+                
+                
+                
               </div>
               {/* ------------------- */}
             </div>
           </>
         </div>
-      </section>
+      </div>
 
-      <section className="contact-section">
+      <div className="contact-section p-7">
         <form action="" onSubmit={handleSubmit}>
-          <div className="contact-form">
-            <div className="contact-form__left">
+
+          <div className="contact-form grid4">
+
+            <div className="contact-form grid-item">
               <InputFormFields
-                label="First Name"
+                label="FirstName"
                 setValue={(e: any) => setFirstName(e.target.value)}
                 value={firstName}
               />
               <InputFormFields
                 label="Email"
-                setValue={(e: any) => setFirstName(e.target.value)}
-                value={firstName}
+                setValue={(e: any) => setEmail(e.target.value)}
+                value={email}
               />
             </div>
-            <div className="contact-form__right">
+
+            <div className="contact-form  grid-item">
               <InputFormFields
                 label="Last Name"
                 setValue={(e: any) => setLastName(e.target.value)}
@@ -106,26 +118,45 @@ const Contact = () => {
               />
               <InputFormFields
                 label="Subject"
-                setValue={(e: any) => setLastName(e.target.value)}
-                value={lastName}
+                setValue={(e: any) => setSubject(e.target.value)}
+                value={subject}
               />
             </div>
+            
           </div>
-          <div className="input-field__message">
-            <label htmlFor="message">Message</label>
+
+          <div className="contact-form__message">
+            <label htmlFor="message" >Message</label> 
+            <br />
+            <div className="send">
             <textarea
-              cols={30}
+              cols={80}
               rows={10}
               name="message"
               id="message"
-              placeholder="Enter message"
+              placeholder="Type your Message"
             />
-          </div>
-          <Buttons className="secondary" type="submit">
-            Submit
+            <br />
+            <Buttons className="secondary" type="submit">
+            Send Message
           </Buttons>
+          </div>
+          </div>
+          
         </form>
-      </section>
+      </div>
+
+      {/* <section className="map-section">
+        <h4>Map Section</h4>
+        <div className="team-photograph p-7">
+          <Image
+            src="/assets/home-hero-bg.jpg"
+            width={500}
+            height={300}
+            alt="team photo"
+          />
+        </div>
+      </section> */}
     </div>
   );
 };

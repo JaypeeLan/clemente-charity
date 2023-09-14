@@ -3,111 +3,144 @@ import Image from "next/image";
 const Page = () => {
   return (
     <div className="about-page">
-      <section className="about-header">
-        <div className="header-section">
-          <div>
-            <div className="start">
-              <h4 className="header-title">Know about us</h4>
-              <h3 className="sub-title pt-5">
-                We are a non- <br /> governmental organization
-              </h3>
-            </div>
-            <div className="paragraphs mb-5">
-              <h4 className="paragraph">
-                Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet.
-                Nunc ut sem vitae risus tristique posuere.
-              </h4>
-              <br />
-              <p className="paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros elementum tristique. Duis
-                cursus, mi quis viverra ornare, eros dolor interdum nulla, ut
-                commodo diam libero vitae erat. Suspendisse varius enim
-                elementum tristique.
-              </p>
-            </div>
-          </div>
+      <div className="grid2 pt-7 sect">
+        <div className="grid-items">
+          <h4 className="header-title">Know about us</h4>
+          <h3 className="sub-title pt-5">
+            We are a non- <br /> governmental organization
+          </h3>
         </div>
-        <div className="team-photograph pt-3">
-          <Image
-            src="/assets/home-hero-bg.jpg"
-            width={1200}
-            height={400}
-            alt="team photo"
-          />
-        </div>
-      </section>
 
-      <div className="mission">
-        <div className="aims">
-        <h4>OUR MISSION</h4>
-          <div className="aims-objectives">
-            <h4>
-            We make sure to provide inclusive care for children with special needs
-            </h4>
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
-            </p>
-          </div>
-        </div>
-        <div className="aims">
-        <h4>OUR VISION</h4>
-          <div className="aims-objectives">
-            <h4>
-            Provide more inclusive care to children around the world
-            </h4>
-            <p>
-              {" "}
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut sem vitae risus tristique posuere..
-            </p>
-          </div>
+        <div className="grid-items">
+          <h4 className="paragraph">
+          We are a dedicated organization founded to support abandoned children and their welfare. Our primary aim is to provide a safe and nurturing environment for these children, promoting their physical, emotional, and cognitive development.
+          </h4>
+          <br />
+          <p className="paragraph">
+           We ensure that they have access to basic healthcare and nutrition, and work towards reintegrating them into loving and stable families. Additionally, we raise awareness about child abandonment and advocate for policy changes to prevent it. Through our residential homes, comprehensive care services, educational programs, and collaborations with healthcare providers and adoption agencies, we strive to make a positive impact in the lives of abandoned children. With your support, we can continue to provide the love, care, and opportunities they deserve.
+          </p>
         </div>
       </div>
 
-      <section className="team">
-        <h2>Aims and Objectives</h2>
-        <h3>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-          varius enim in eros elementum tristique.
-        </h3>
+      <div className="p-5 text-center">
+        <Image
+          src="/assets/group.jpg"
+          width={1200}
+          height={600}
+          alt="team photo"
+        />
+      </div>
 
-        <div className="team-group">
-          <div className="team-group_member">
-            <div>
-              <Image
-                src="/assets/home-hero-bg.jpg"
-                width={500}
-                height={300}
-                alt="team photo"
-              />
-            </div>
-            <p>Ore olofo</p>
-          </div>
-          <div className="team-group_member">
-            <div>
-              <Image
-                src="/assets/home-hero-bg.jpg"
-                width={500}
-                height={300}
-                alt="team photo"
-              />
-            </div>
-            <p>Ore olofo</p>
-          </div>
-          <div className="team-group_member">
-            <div>
-              <Image
-                src="/assets/home-hero-bg.jpg"
-                width={500}
-                height={300}
-                alt="team photo"
-              />
-            </div>
-            <p>Ore olofo</p>
+      {/* <div className=" grid2">
+        <div className=" grid-items">
+          <h4>OUR MISSION</h4>
+          <div className="aims-objectives">
+            <h4>
+            To facilitate the reintegration of abandoned children into loving and stable families.
+            </h4>
+            <p>
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
+              lorem imperdiet. Nunc ut sem vitae risus tristique posuere.
+            </p>
           </div>
         </div>
-      </section>
+        <div className=" grid-items">
+          <h4>OUR VISION</h4>
+          <div className="aims-objectives">
+            <h4>To raise enough awareness Provide more inclusive care to children around the world</h4>
+            <p>
+              {" "}
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Suspendisse varius enim in eros elementum tristique. Duis cursus,
+              mi quis viverra ornare, eros dolor interdum nulla, ut commodo diam
+              libero vitae erat. Aenean faucibus nibh et justo cursus id rutrum
+              lorem imperdiet. Nunc ut sem vitae risus tristique posuere..
+            </p>
+          </div>
+        </div>
+      </div> */}
+
+      <article className="special">
+        <div className="sub-header pt-7 pb-2 projects-sub">
+          <h3>Aims and Objectives</h3>
+        </div>
+        <div className="grid3 pb-7">
+          <div className="grid-items">
+            <h5>Shelter</h5>
+            <p>
+              To provide a safe and nurturing environment for abandoned children
+              and to facilitate the reintegration of abandoned children into
+              loving and stable families.
+            </p>
+          </div>
+          <div className="grid-items">
+            <h5>Healthcare</h5>
+            <p>
+              To promote the physical, emotional, and cognitive development of
+              abandoned children. To ensure that abandoned children have access
+              to basic healthcare and nutrition.
+            </p>
+          </div>
+          <div className="grid-items">
+            <h5>Education</h5>
+            <p>
+              To meet the unique needs of abandoned children, Develop and
+              implement programs that promote the physical, emotional, and
+              cognitive development of abandoned children, such as early
+              childhood education, recreational activities, and therapy.
+            </p>
+          </div>
+          <div className="grid-items">
+            <h5>Basic amenities</h5>
+            <p>
+              Establish and operate residential homes for abandoned children,
+              providing them with a secure and loving environment with provision
+              for food, clothings and other basic amenities in any favourable
+              foundation for child development
+            </p>
+          </div>
+          <div className="grid-items">
+            <h5>Medicals</h5>
+            <p>
+              Collaborate with local hospitals, clinics, and healthcare
+              providers to ensure abandoned children receive necessary medical
+              attention and vaccinations. Provide comprehensive care and support
+              services, including education, healthcare, and counseling,
+            </p>
+          </div>
+          <div className="grid-items">
+            <h5>Public outreach</h5>
+            <p>
+              Conduct awareness campaigns and educational programs to inform the
+              public about the consequences of child abandonment and the
+              importance of providing support to abandoned children. Advocate
+              for policy changes and reforms that address the root causes of
+              child abandonment and improve the welfare system for abandoned
+              children.
+            </p>
+          </div>
+          <div className="grid-items">
+            <h5>Seek your Support</h5>
+            <p>
+              Fundraise and seek financial support from individuals,
+              corporations, and grant-making organizations to sustain and expand
+              the organizations services for abandoned children.
+            </p>
+          </div>
+          <div className="grid-items">
+            <h5>Conduct Researchs and Outreachs</h5>
+            <p>
+              Conduct research and collect data on child abandonment to better
+              understand the issue and inform evidence-based interventions and
+              programs.
+            </p>
+          </div>
+        </div>
+      </article>
     </div>
   );
 };

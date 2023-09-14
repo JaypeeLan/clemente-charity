@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image"
 import { useEffect, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import ThemeToggleBtn from "@/context/ThemeToggleBtn";
@@ -41,7 +42,12 @@ export default function Navbar() {
         <div className="container">
           <div className="logo">
             <Link href="/">
-              <>Christamelon Foundation</>
+            <Image
+            src="/assets/logo.png"
+            width={100}
+            height={50}
+            alt="team photo"
+          />
             </Link>
           </div>
           <ul className={`menu ${isOpen ? "open" : ""}`}>
@@ -55,18 +61,18 @@ export default function Navbar() {
           </ul>
 
           <div className="mobile-donate-container">
+            <div className="donate">
+              <Link href="/donate">
+                <>Donate</>
+              </Link>
+            </div>
             <button
               className="mobile-menu-icon"
               onClick={() => setIsOpen(!isOpen)}
             >
               {isOpen ? <FaTimes /> : <FaBars />}
             </button>
-            <div className="donate">
-              <Link href="/donate">
-                <>Donate</>
-              </Link>
-            </div>
-            <ThemeToggleBtn />
+            {/* <ThemeToggleBtn /> */}
           </div>
         </div>
       </nav>

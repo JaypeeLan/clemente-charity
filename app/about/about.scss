@@ -1,5 +1,4 @@
 .about-page {
-  padding: 1rem 4rem;
   .header-section {
     position: relative;
     > div {
@@ -18,7 +17,9 @@
       }
     }
   }
-
+.sect{
+  background: $bg;
+}
   .header-title {
     color: $title;
     text-transform: uppercase;
@@ -62,14 +63,14 @@
  
 }
 
-.team {
-  @include flex-container($gap: 3rem, $flex-direction: column);
+// .team {
+//   @include flex-container($gap: 3rem, $flex-direction: column);
 
-  &-group {
-    width: 100%;
-    @include grid(1rem);
-  }
-}
+//   &-group {
+//     width: 100%;
+//     @include grid(1rem);
+//   }
+// }
 .pt-3{
   padding-top: 30px;
 }
@@ -79,3 +80,39 @@
 .mb-5{
   margin-bottom: 50px;
 }
+
+.grid2{
+  padding: 2rem 4rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: auto;
+  }
+  .grid-items{
+    flex-basis: 48%;
+    text-align: start;
+    border-radius: 7px;
+    margin-bottom: 20px;
+    color: #fff;
+    position: relative;
+  }
+  .grid3{
+    padding: 2rem 4rem;
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: auto;
+    }
+    .grid-item{
+      flex-basis: 32%;
+    }
+    .text-center{
+      text-align: center;
+    }
+    .sub-header{
+      width: 60%;
+      margin: 0 auto;
+      text-align: center;
+    }
