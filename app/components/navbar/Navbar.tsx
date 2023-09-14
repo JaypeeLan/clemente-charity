@@ -41,7 +41,7 @@ export default function Navbar() {
         <div className="container">
           <div className="logo">
             <Link href="/">
-              <>Logo</>
+              <>Christamelon Foundation</>
             </Link>
           </div>
           <ul className={`menu ${isOpen ? "open" : ""}`}>

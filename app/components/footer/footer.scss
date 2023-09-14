@@ -17,11 +17,39 @@
   a {
     color: $white;
   }
+  h3 {
+    color: $white;
+  }
+  h4 {
+    color: $white;
+  }
+  label{
+    position: relative;
+  }
+  input[type="text"]{
+    border: 1px solid $white;
+    width:300px;
+    height:40px;
+    background: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .btnx{
+    position: absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    background-color: $white;
+    border-radius: 5px ;
+    border: none;
+    padding:10px 30px;
+    cursor: pointer;
+  }
 
   &-links {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: start;
     gap: 20px;
 
     &_socials {
@@ -29,4 +57,10 @@
       gap: 5px;
     }
   }
+}
+.mb-15{
+  padding-bottom: 150px;
+}
+.mb-7{
+  padding-bottom: 70px;
 }

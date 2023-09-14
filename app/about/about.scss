@@ -4,12 +4,13 @@
     position: relative;
     > div {
       min-height: 40vh;
-      @include grid(4rem);
+      @include grid();
 
       > div {
         height: 50%;
         @include flex-container(space-between, flex-start);
         flex-direction: column;
+        
 
         &:last-child {
           padding: 1rem;
@@ -22,7 +23,12 @@
     color: $title;
     text-transform: uppercase;
   }
-
+  .start{
+    display: flex;
+    flex-direction: column;
+    align-items:start;
+    margin-right: 170px;
+  }
   .sub-title {
     color: $title;
   }
@@ -31,23 +37,29 @@
     .paragraph {
       color: $title;
       text-align: left;
+      line-height: 30px;
     }
   }
 }
-
 .team-photograph {
   text-align: center;
   width: 100%;
+  // border-radius: 20px;
 }
 
 .mission {
-  @include flex-container($gap: 20px, $flex-direction: column);
-  text-align: center;
+  width: 80%;
+  height: 20vh;
+  margin: 40px auto 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: start;
 }
 
 .aims {
-  @include flex-container($gap: 1rem, $flex-direction: column);
-  text-align: center;
+  flex-basis: 50%;
+ 
 }
 
 .team {
@@ -57,4 +69,13 @@
     width: 100%;
     @include grid(1rem);
   }
+}
+.pt-3{
+  padding-top: 30px;
+}
+.pt-5{
+  padding-top: 50px;
+}
+.mb-5{
+  margin-bottom: 50px;
 }
