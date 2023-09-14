@@ -68,14 +68,18 @@ nav {
   }
 }
 
+div.donate{
+  background: transparent;
+}
+
 .donate {
   a {
     margin-left: 1rem; /* Add a small margin between the toggle button and the Donate button */
     padding: 0.5rem 1rem;
     border-radius: 20px;
     border: none;
-    background-color: black;
-    color: white;
+    background-color: $black;
+    color: $white;
     font-size: 1rem;
 
     &:hover {

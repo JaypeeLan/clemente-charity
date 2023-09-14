@@ -4,8 +4,6 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  //   display: grid;
-  //   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   color: $white;
   padding: 5rem 0;
 
@@ -58,9 +56,27 @@
     }
   }
 }
-.mb-15{
+.pb-15{
   padding-bottom: 150px;
 }
 .mb-7{
   padding-bottom: 70px;
+}
+.footer {
+  @include respond(phone){
+    display: block;
+    padding: 2rem 4rem;
+    .mb-4{
+      margin-bottom: 4rem;
+    }
+    .mb-2{
+      margin-bottom: 2rem;
+    }
+    .logo-main{
+      text-align: center;
+      .logo{
+        padding-bottom: 50px;
+      }
+    }
+  }
 }

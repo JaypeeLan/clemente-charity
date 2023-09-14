@@ -6,11 +6,11 @@ const Footer = () => {
   const { isDarkMode } = useTheme();
   return (
     <footer className={`footer ${isDarkMode ? "dark" : "light"}`}>
-      <div>
-        <h1 className="logo mb-15">Christamelon Foundation</h1>
+      <div className="logo-main">
+        <h1 className="logo pb-15">Christamelon Foundation</h1>
       </div>
       {/* ------------------ */}
-      <div className="footer-links">
+      <div className="footer-links mb-4">
         <h4 className="footer-links_heading"> Home</h4>
         <Link href="/about"> About Us</Link>
         <Link href="/">Team</Link>
@@ -18,7 +18,7 @@ const Footer = () => {
         <Link href="/contact"> Contact</Link>
       </div>
       {/* ------------------ */}
-      <div className="footer-links">
+      <div className="footer-links mb-4">
         <h4 className="footer-links_heading"> More</h4>
         <Link href="/"> Projects</Link>
         <Link href="/">Events</Link>
@@ -27,7 +27,7 @@ const Footer = () => {
       </div>
 
       {/* ------------------ */}
-      <div className="footer-links">
+      <div className="footer-links mb-2">
         <h4 className="footer-links_heading"> Connect</h4>
         <div className="footer-links">
           <Link href="mailto:jplaniran01@gmail.com"> Email</Link>
@@ -43,7 +43,7 @@ const Footer = () => {
         <div className="footer-links">
           <label>
             <input type="text" placeholder="Your Email" />
-            <button class="btnx">Subscribe</button>
+            <button className="btnx">Subscribe</button>
           </label>
         </div>
       </div>

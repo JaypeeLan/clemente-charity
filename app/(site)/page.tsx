@@ -10,7 +10,7 @@ export default function Home() {
     <>
       <section id="home" className="homepage">
         <h1 className={`homepage-title ${isDarkMode ? "dark" : "light"}`}>
-          Inclusive care for girls with special needs in all of Zimbabwe
+          Inclusive care for girls <br /> with special needs in <br /> all of Zimbabwe
         </h1>
         <Buttons className="secondary">What we do</Buttons>
         <h1></h1>
