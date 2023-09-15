@@ -18,8 +18,8 @@
       }
     }
   }
-.adj{
-    padding-left: 5rem;
+#team{
+  object-fit: cover;
 }
 .grid2{
   padding: 2rem 4rem;
@@ -40,8 +40,7 @@
   p{
     color: $black;
   }
-  .article{
-    text-align: center;
+  .projects{
     background: $bg;
   }
   .grid-items{
@@ -55,9 +54,6 @@
   .grid-item{
     flex-basis: 32%;
   }
-  .projects-sub{
-    padding-left: 5rem;
-}
 .pt-2{
     padding-top: 20px;
   }
@@ -88,11 +84,17 @@
     padding-top: 70px;
     padding-bottom: 70px;
   }
-
-  .media {
+.sub-head{
+  text-align: center;
+}
+  .media.grid2{
     @include respond(phone){
+      padding: 2rem 2rem;
       .adj{
         padding-left: 0;
+      }
+      .cntr{
+        text-align: center;
       }
       .grid-items{
         flex-basis: 100%;
@@ -101,24 +103,25 @@
   }
   .special {
     @include respond(phone){
+      .sub-head{
+        padding-left: 1rem;
+      }
+      .grid3{
+        padding: 2rem;
+      }
       .grid-items{
         flex-basis: 100%;
       }
-      sub-header{
-      text-align: center;
-      }
-      
     }
   }
   .projects {
     @include respond(phone){
-      .grid-item{
-        flex-basis: 100%;
+      .sub-head{
+        padding: 0 1rem;
       }
-    }
-  }
-  .article{
-    @include respond(phone){
+      .grid3{
+        padding: 2rem;
+      }
       .grid-items{
         flex-basis: 100%;
       }

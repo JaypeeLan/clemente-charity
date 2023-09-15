@@ -3,7 +3,6 @@ import React, { useState } from "react";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
 import Buttons from "../components/buttons/Buttons";
-import Image from "next/image"
 
 const InputFormFields = ({
   label,
@@ -38,7 +37,7 @@ const Contact = () => {
   };
   return (
     <div className="contact-page">
-      <div className="contact ">
+      <div className="contact">
         <div className="contact-hero">
           <>
             <div className="cont">
@@ -77,11 +76,13 @@ const Contact = () => {
               </div>
 
               <div className="spc">
-                <div className="social"><FiLinkedin /></div>
-                <div className="social"><FiFacebook /></div>
-                <div className="social"><Link href="https://instagram.com/clemente_charity_foundation?igshid=MzRlODBiNWFlZA==">
+                <Link id="insta" href="https://instagram.com/clemente_charity_foundation?igshid=MzRlODBiNWFlZA==">
+                <FiFacebook /></Link>
+                <Link id="insta" href="https://instagram.com/clemente_charity_foundation?igshid=MzRlODBiNWFlZA==">
+                <FiLinkedin /></Link>
+                <Link id="insta" href="https://instagram.com/clemente_charity_foundation?igshid=MzRlODBiNWFlZA==">
                 <FiInstagram />
-                </Link></div>
+                </Link>
                 
                 
                 
@@ -126,8 +127,6 @@ const Contact = () => {
           </div>
 
           <div className="contact-form__message">
-            <label htmlFor="message" >Message</label> 
-            <br />
             <div className="send">
             <textarea
               cols={80}
@@ -145,18 +144,6 @@ const Contact = () => {
           
         </form>
       </div>
-
-      {/* <section className="map-section">
-        <h4>Map Section</h4>
-        <div className="team-photograph p-7">
-          <Image
-            src="/assets/home-hero-bg.jpg"
-            width={500}
-            height={300}
-            alt="team photo"
-          />
-        </div>
-      </section> */}
     </div>
   );
 };

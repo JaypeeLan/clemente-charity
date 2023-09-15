@@ -16,10 +16,10 @@
     @include flex-container(space-between, flex-start);
   }
 }
-// h5 .sub-header {
-//   color: $black;
-//   z-index: 2;
-// }
+
+#team{
+  object-fit: cover;
+}
 .grid2{
   padding: 2rem 4rem;
     width: 100%;
@@ -38,6 +38,7 @@
   }
 .grid2 {
   @include respond(phone) {
+    padding: 0 0;
     .grid-items{
       flex-basis: 100%;
       margin:1rem auto;
@@ -50,7 +51,14 @@
       p{
         padding-bottom: 30px;
       }
+      .txt-cnt{
+        text-align: center;
+      }
     }
   }
 }
-
+div.services.grid2 {
+  @include respond(phone) {
+    padding: 1rem 2rem;
+  }
+}

@@ -1,13 +1,16 @@
 #home {
   min-height: 100vh;
   display: grid;
-  place-items: start;
+  text-align: center;
   align-items: center;
+  justify-content: center;
   padding: 4rem;
 }
-
+.bn{
+  margin-bottom: 9rem;
+}
 .homepage {
-  background: url("/assets/fullpage.jpg") center center/cover no-repeat;
+  background: url("/assets/gather.jpg") center center/cover no-repeat;
   background-size: cover;
 
   &-title {
@@ -18,10 +21,15 @@
     }
   }
 }
-.homepage {
+#home {
   @include respond(phone){
+    text-align: center;
+    padding: 1rem;
     h1{
-      text-align: center;
+      font-size: 40px;
     }
+    // .bn{
+    //   margin-bottom: 90px;
+    // }
   }
 }

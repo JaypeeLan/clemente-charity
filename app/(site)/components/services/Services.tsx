@@ -5,7 +5,7 @@ const Services = () => {
   return (
     <div className="services grid2 pt-7">
       <div grid-items>
-        <Image
+        <Image id="team"
           src="/assets/girl.jpg"
           alt="little children"
           width={500}
@@ -13,10 +13,12 @@ const Services = () => {
         />
       </div>
       <div className="grid-items">
+        <div className="txt-cnt">
         <h5 className="pb-2">WHAT WE DO</h5>
         <h3>
           Some services we <br /> provide for our girls
         </h3>
+        </div>
         <br />
         <p>
           To provide a safe and nurturing environment for abandoned children and
@@ -24,6 +26,7 @@ const Services = () => {
           stable families.
         </p>
         <br />
+        
         <>
           <div className="services-details pb-2">
             <div className="services-details__content">
@@ -37,9 +40,14 @@ const Services = () => {
                 children.
               </p>
             </div>
-            <div className="services-details__img">
-              <img src="" alt="icon" />
-            </div>
+            {/* <div className="services-details__img">
+            <Image
+          src="/assets/girl.jpg"
+          alt="little children"
+          width={50}
+          height={50}
+        />
+            </div> */}
           </div>
           <div className="services-details pb-2">
             <div className="services-details__content">
@@ -53,9 +61,9 @@ const Services = () => {
                 ongoing healthcare support.
               </p>
             </div>
-            <div className="services-details__img">
+            {/* <div className="services-details__img">
               <img src="" alt="icon" />
-            </div>
+            </div> */}
           </div>
           <div className="services-details pb-2">
             <div className="services-details__content">
@@ -68,9 +76,9 @@ const Services = () => {
                 they find loving and stable homes.
               </p>
             </div>
-            <div className="services-details__img">
+            {/* <div className="services-details__img">
               <img src="" alt="icon" />
-            </div>
+            </div> */}
           </div>
           <div className="services-details ">
             <div className="services-details__content">
@@ -84,9 +92,9 @@ const Services = () => {
                 for policy changes.
               </p>
             </div>
-            <div className="services-details__img">
+            {/* <div className="services-details__img">
               <img src="" alt="icon" />
-            </div>
+            </div> */}
           </div>
         </>
       </div>
