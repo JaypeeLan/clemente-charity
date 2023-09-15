@@ -1,18 +1,23 @@
  import React from "react";
 import { Chart } from "./chart/Chart";
+import Link from "next/link";
 import Buttons from "@/app/components/buttons/Buttons";
 
 const Volunteer = () => {
   return (
     <div className="volunteer">
-      <div className="grid-2 mb-5">
+      <div className="grid-2 mt-5 mb-5">
         <div className="grid-item1">
+          <div className="cntr">
           <h2 className="chartside">How we spend your <br /> donations and where it goes</h2>
+          
           <p className="p-5">
-            We understand that when you make a  donation, you want to know
+            We understand that when you make a donation, you want to know
             exactly where your money is going and we pledge to be transparent.
           </p>
+          </div>
         </div>
+
         <div className="grid-item2">
           <Chart />
         </div>
@@ -25,8 +30,8 @@ const Volunteer = () => {
             needs!
           </h2>
           <div className="contribute-btns pt-3">
-            <Buttons className="secondary">Join as a Volunteer</Buttons>
-            <Buttons className="primary">Donate</Buttons>
+          <Link href="/donate"><Buttons className="secondary">Donate
+              </Buttons></Link>
           </div>
         </div>
       </div>

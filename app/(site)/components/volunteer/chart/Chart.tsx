@@ -5,7 +5,7 @@ import { Pie } from "react-chartjs-2";
 ChartJS.register(ArcElement, Tooltip, Legend);
 
 export const data = {
-  labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+  labels: ["30% Food and Basic Amenities", "35% Child Care Home", "5% Awareness", "15% Child Education", "10% Excusions", "5% Outreach Programs"],
   datasets: [
     {
       label: "% of money",

@@ -20,7 +20,7 @@ const page = () => {
           </Buttons>
         </div>
         <div className="grid-items text-center">
-          <Image
+          <Image id="team"
             src="/assets/handout.jpg"
             width={450}
             height={300}

@@ -23,10 +23,10 @@ const Page = () => {
       </div>
 
       <div className="p-5 text-center">
-        <Image
+        <Image id="team"
           src="/assets/group.jpg"
-          width={1200}
-          height={600}
+          width={900}
+          height={450}
           alt="team photo"
         />
       </div>

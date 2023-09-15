@@ -39,6 +39,11 @@ h2 {
 label {
   color: $text;
 }
+
+#insta{
+  color: $text;
+  font-size: 40px;
+}
 .grid4 {
   padding: 0;
   width:50%;
@@ -151,7 +156,7 @@ label {
 .contact-page {
   @include respond(phone) {
     .contact {
-      padding: 1rem 1rem;
+      padding:1rem 0;
     }
   }
 }

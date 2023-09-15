@@ -4,9 +4,9 @@ import Image from "next/image";
 const page = () => {
   return (
     <div>
-      <div className="media p-3 grid2">
-        <div className="adj  grid-items">
-          <h6 className="">WHAT WE DO</h6>
+      <div className="media pt-7 grid2">
+        <div className="  grid-items">
+          <h5 className="">WHAT WE DO</h5>
           <h3 className="pt-2">
             Our goal is to <br /> provide inclusive <br /> care for children{" "}
             <br /> with special needs
@@ -17,18 +17,21 @@ const page = () => {
             loving and stable families.
           </p>
         </div>
+
+
         <div className="team-photograph grid-items">
-          <Image
+          <Image id="team"
             src="/assets/gather.jpg"
             width={500}
             height={300}
             alt="team photo"
           />
         </div>
+
       </div>
 
       <article className="special">
-        <div className="sub-header pt-7 pb-2 projects-sub">
+        <div className="sub-head pt-7 pb-2">
           <h3>What we do for our kids with special needs</h3>
         </div>
         <div className="grid3 pb-7">
@@ -86,17 +89,17 @@ const page = () => {
       </article>
 
       <div className="projects pb-7">
-        <div className="projects-sub">
-          <h5 className="p-5">Projects we have done</h5>
-          <h3 className="pb-5">
-            We are creating a place <br /> where children with special <br />{" "}
+        <div className="sub-head">
+          <h4 className="pt-5">Projects we have done</h4>
+          <h3 className="p-3">
+            We are creating a place where children <br /> with special {" "}
             needs can thrive
           </h3>
         </div>
 
         <div className="grid3">
           <div className="grid-item">
-            <Image
+            <Image id="team"
               src="/assets/hall.jpg"
               width={400}
               height={250}
@@ -104,7 +107,7 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image
+            <Image id="team"
               src="/assets/gather2.jpg"
               width={400}
               height={250}
@@ -112,7 +115,7 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image
+            <Image id="team"
               src="/assets/handout.jpg"
               width={400}
               height={250}
@@ -120,7 +123,7 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image
+            <Image id="team"
               src="/assets/children.jpg"
               width={400}
               height={250}
@@ -128,7 +131,7 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image
+            <Image id="team"
               src="/assets/upclose.jpg"
               width={400}
               height={250}
@@ -136,7 +139,7 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image
+            <Image id="team"
               src="/assets/upclose2.jpg"
               width={400}
               height={250}
@@ -145,28 +148,6 @@ const page = () => {
           </div>
         </div>
       </div>
-
-      {/* <article className="article p-7">
-        <h4>The Article base</h4>
-      <div className="grid2">
-        <div className="grid-items">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Perspiciatis rerum excepturi, sequi numquam sapiente quibusdam
-            provident id ipsa molestiae reprehenderit fugiat corrupti dicta unde
-            illo eveniet porro mollitia quae nulla.
-          </p>
-        </div>
-        <div className="grid-items">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi facere
-            corrupti quis dolorem cupiditate, quibusdam ex numquam optio vitae
-            sapiente beatae ad, placeat sunt, recusandae repellendus asperiores
-            quasi itaque quisquam.
-          </p>
-        </div>
-      </div>
-      </article> */}
     </div>
   );
 };

@@ -1,7 +1,6 @@
 .about {
   @include flex-container(space-around);
   background-color: $bg;
-  padding: 0 5%;
 
   &-left {
     display: flex;
@@ -9,6 +8,9 @@
     gap: 1rem;
     max-width: 800px;
   }
+}
+#team{
+  object-fit: cover;
 }
 .text-center{
   text-align: center;
@@ -31,3 +33,13 @@
     position: relative;
   }
 
+section.about {
+    @include respond(phone) {
+      .grid2{
+        padding: 1rem 2rem;
+        .subz{
+          text-align: center;
+        }
+      }
+    }
+  }
