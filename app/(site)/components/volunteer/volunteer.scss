@@ -1,9 +1,5 @@
 .volunteer {
   background-color: $white;
-
-  div:last-child {
-    // background-color: aqua;
-  }
 }
 .chartside{
   color: $white !important;
@@ -16,9 +12,10 @@
   max-width: 900px;
   margin: 2rem auto;
   text-align: center;
-  background: url("/assets/fullpage.jpg") center center/cover no-repeat;
+  background: url("/assets/gather2.jpg") center center/cover no-repeat;
   padding: 2rem;
   border-radius: 2rem;
+  
 
   &-btns {
     display: flex;
@@ -33,7 +30,7 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-around;
+    // justify-content: space-around;
     margin: auto;
   }
   .grid-item1{
@@ -57,4 +54,25 @@
 }
 .mb-5{
   margin-bottom: 50px;
+}
+
+.volunteer {
+  @include respond(phone) {
+    .grid-2{
+      padding: 1rem 2rem;
+      .grid-item1, .grid-item2{
+        flex-basis: 100%; 
+      }
+      .cntr{
+        text-align: center;
+      }
+    }
+
+  }
+}
+.contribute {
+  @include respond(phone) {
+    margin: 0 auto 2rem;
+
+  }
 }

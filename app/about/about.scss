@@ -17,6 +17,9 @@
       }
     }
   }
+  #team{
+    object-fit: cover;
+  }
 .sect{
   background: $bg;
 }
@@ -62,15 +65,6 @@
   flex-basis: 50%;
  
 }
-
-// .team {
-//   @include flex-container($gap: 3rem, $flex-direction: column);
-
-//   &-group {
-//     width: 100%;
-//     @include grid(1rem);
-//   }
-// }
 .pt-3{
   padding-top: 30px;
 }
@@ -115,4 +109,15 @@
       width: 60%;
       margin: 0 auto;
       text-align: center;
+    }
+
+    .about-page{
+      @include respond(phone) {
+        #team{
+          padding:0 1rem;
+        }
+        .grid2{
+          padding: 2rem;
+        }
+      }
     }
