@@ -8,8 +8,8 @@ const page = () => {
         <div className="  grid-items">
           <h4 className="">WHAT WE DO</h4>
           <h3 className="pt-2">
-            Our goal is to <br /> provide inclusive <br /> care for children{" "}
-            <br /> with special needs
+            Our goal is to provide inclusive care for children <br /> with
+            special needs
           </h3>
           <p className="pt-5">
             To provide a safe and nurturing environment for abandoned children

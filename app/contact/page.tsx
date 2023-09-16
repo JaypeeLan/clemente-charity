@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
 import Buttons from "../components/buttons/Buttons";
@@ -37,6 +37,24 @@ const Contact = () => {
     message: "",
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isValid, setIsValid] = useState(false);
+
+  useEffect(() => {
+    const isValidEmail = (email: string) => {
+      const re =
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(String(email).toLowerCase());
+    };
+
+    const { firstName, lastName, email, subject, message } = formValues;
+    if (firstName && lastName && isValidEmail(email) && subject && message) {
+      setIsValid(true);
+    } else {
+      setIsValid(false);
+    }
+  }, [formValues]);
+
   const handleChange = (e: any) => {
     setFormValues({
       ...formValues,
@@ -44,9 +62,17 @@ const Contact = () => {
     });
   };
 
-  const handleSubmit = (e: any) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
-    console.log(formValues);
+    setIsSubmitting(true);
+    try {
+      // Replace with your actual API call
+      // await axios.post('/api/contact', formValues);
+    } catch (error) {
+      console.error(error);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -151,7 +177,11 @@ const Contact = () => {
                 required
               />
               <br />
-              <Buttons className="secondary" type="submit">
+              <Buttons
+                className="secondary"
+                type="submit"
+                disabled={!isValid || isSubmitting}
+              >
                 Send Message
               </Buttons>
             </div>
