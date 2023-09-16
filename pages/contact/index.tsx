@@ -78,17 +78,16 @@ const Contact = () => {
   return (
     <div className="contact-page">
       <div className="contact">
-        <div className="contact-hero">
-          <>
-            <div className="cont">
-              <h3>CONTACT</h3>
-              <h2>We&#039;d love to hear from you</h2>
+        <div className="grid2">
+            <div className="grid-items">
+              <h4 className="pb-7">CONTACT</h4>
+              <h2 className="pb-7">We&#039;d love to hear from you</h2>
               <p className="rogue">
                 Have any question in mind or want to enquire? Please feel free
                 to contact us through the form or the following details.
               </p>
             </div>
-            <div>
+            <div className="grid-items nb">
               <div>
                 <h4>Let us talk</h4>
                 <p>+447825611810, +2349095347896 </p>
@@ -96,13 +95,13 @@ const Contact = () => {
                 <p>clementecharityfoundation23@gmail.com</p>
               </div>
               {/* ------------------ */}
-              <div>
+              <div className="pt-5">
                 <h4>Headoffice </h4>
                 <p>Flat 3, Jakande Estate, Lagos, Nigeria</p>
               </div>
 
               {/* ------------------ */}
-              <div>
+              <div className="pt-5">
                 <h4>Branch office</h4>
                 <p>
                   67, Yorkshire Road, Mitcham Surrey, CR41PQ, <br />
@@ -110,7 +109,7 @@ const Contact = () => {
                 </p>
               </div>
 
-              <div className="spc">
+              <div className="spc pt-5">
                 <Link
                   id="insta"
                   href="https://instagram.com/clemente_charity_foundation?igshid=MzRlODBiNWFlZA=="
@@ -132,7 +131,6 @@ const Contact = () => {
               </div>
               {/* ------------------- */}
             </div>
-          </>
         </div>
       </div>
 

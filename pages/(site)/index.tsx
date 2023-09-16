@@ -17,6 +17,11 @@ export default function LandingPage() {
           <Link href="/media">
             <Buttons className="secondary mv">What we do</Buttons>
           </Link>
+          <div className="grid-3">
+        <div className="grid-itms"><p>230 children under our care</p></div>
+        <div className="grid-itms mb"><hr /></div>
+        <div className="grid-itms"><p>58 Donations collected</p></div>
+      </div>
         </div>
       </section>
       <About />

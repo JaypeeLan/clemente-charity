@@ -1,5 +1,5 @@
 .contact {
-  padding: 3rem 4rem;
+  // padding: 3rem 4rem;
   background: $bg;
   @include flex-container;
   &-hero {
@@ -59,6 +59,26 @@ label {
   color: #fff;
   // position: relative;
 }
+.nb{
+  padding-left: 4rem;
+}
+.grid2 {
+  padding: 2rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.grid-items {
+  flex-basis: 48%;
+  text-align: left;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
+
 .contact-section {
   @include respond(phone) {
     .grid4 {
@@ -100,6 +120,13 @@ label {
     max-width: 300px;
     margin: 0 auto;
     padding-top: 20px;
+  }
+}
+.grid2{
+  @include respond(phone) {
+    .grid-items{
+      padding:0;
+    }
   }
 }
 .contact-form__message {
