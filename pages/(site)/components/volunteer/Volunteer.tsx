@@ -1,5 +1,5 @@
 import React from "react";
-import { Chart } from "./chart/Chart";
+import Chart from "./chart/Chart";
 import Link from "next/link";
 import Buttons from "@/components/buttons/Buttons";
 
