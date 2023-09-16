@@ -68,7 +68,7 @@ nav {
   }
 }
 
-div.donate{
+div.donate {
   background: transparent;
 }
 
@@ -109,27 +109,27 @@ div.donate{
 .mobile-menu-icon {
   display: none;
 }
-div.donate{
-  @include respond(phone){
-    padding:0 ;
-    a{
+div.donate {
+  @include respond(phone) {
+    padding: 0;
+    a {
       margin-left: 0;
       margin-right: 1rem;
       margin-bottom: 0.5rem;
     }
   }
 }
-div.container{
-  @include respond(phone){
+div.container {
+  @include respond(phone) {
     align-items: center;
   }
 }
-#logoo{
+#logoo {
   object-fit: cover;
   margin-left: 2rem;
 }
 
-@media screen and (max-width: 768px) {
+@include respond(phone) {
   .menu {
     &.open {
       li {

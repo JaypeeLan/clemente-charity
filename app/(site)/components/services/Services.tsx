@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Image from "next/image";
 
 const Services = () => {
@@ -5,7 +6,8 @@ const Services = () => {
   return (
     <div className="services grid2 pt-7">
       <div grid-items>
-        <Image id="team"
+        <Image
+          id="team"
           src="/assets/girl.jpg"
           alt="little children"
           width={500}
@@ -14,10 +16,8 @@ const Services = () => {
       </div>
       <div className="grid-items">
         <div className="txt-cnt">
-        <h5 className="pb-2">WHAT WE DO</h5>
-        <h3>
-          Some services we <br /> provide for our girls
-        </h3>
+          <h4 className="pb-2">WHAT WE DO</h4>
+          <h3>Some services we provide</h3>
         </div>
         <br />
         <p>
@@ -26,75 +26,67 @@ const Services = () => {
           stable families.
         </p>
         <br />
-        
+
         <>
           <div className="services-details pb-2">
             <div className="services-details__content">
-              <h5 className="services-details__content-title">
-                Comprehensiv Care Services
-              </h5>
+              <h4 className="services-details__content-title">
+                Commitment to the Less Privileged
+              </h4>
               <p className="services-details__content-item">
-                Funds are allocated towards providing comprehensive care
-                services, including education, healthcare, counseling, and
-                recreational activities, to meet the unique needs of abandoned
-                children.
+                At the heart of the Clemente Charity Foundation lies an
+                unwavering commitment to the less privileged. With compassion as
+                their guiding force, the foundation has strived to bridge the
+                gap, providing essential resources and opportunities to those in
+                need. From food and shelter to education and healthcare, the
+                foundation's initiatives cover a wide spectrum of support,
+                ensuring a holistic approach to improving lives.
               </p>
             </div>
-            {/* <div className="services-details__img">
-            <Image
-          src="/assets/girl.jpg"
-          alt="little children"
-          width={50}
-          height={50}
-        />
-            </div> */}
           </div>
           <div className="services-details pb-2">
             <div className="services-details__content">
-              <h5 className="services-details__content-title">
-                Medical Support
-              </h5>
+              <h4 className="services-details__content-title">
+                Addressing Challenges
+              </h4>
               <p className="services-details__content-item">
-                Donations are utilized to collaborate with local hospitals,
-                clinics, and healthcare providers to ensure that abandoned
-                children receive necessary medical attention, vaccinations, and
-                ongoing healthcare support.
+                The foundation recognizes the challenges faced by marginalized
+                communities and strives to alleviate their burdens. By focusing
+                on areas like the Makoko slum, the foundation has tackled issues
+                such as inadequate access to decent needs, lack of access to
+                nutritious meals, and limited educational opportunities. Through
+                collaborative efforts with local communities and volunteers,
+                Clemente Charity Foundation has been able to bring positive
+                change and uplift spirits.
               </p>
             </div>
-            {/* <div className="services-details__img">
-              <img src="" alt="icon" />
-            </div> */}
           </div>
           <div className="services-details pb-2">
             <div className="services-details__content">
-              <h5 className="services-details__content-title">
-                Adoption and Foster Care
-              </h5>
+              <h4 className="services-details__content-title">
+                Education for a Brighter Future
+              </h4>
               <p className="services-details__content-item">
-                Contributions are used to facilitate the adoption or foster care
-                placement of abandoned children into suitable families, ensuring
-                they find loving and stable homes.
+                Education is a cornerstone of the foundation's work.
+                Understanding the transformative power of knowledge, the
+                foundation has taken significant strides to provide quality
+                educational resources, empowering children with the tools to
+                build a brighter future and breaking the cycle of poverty.
               </p>
             </div>
-            {/* <div className="services-details__img">
-              <img src="" alt="icon" />
-            </div> */}
           </div>
           <div className="services-details ">
             <div className="services-details__content">
-              <h5 className="services-details__content-title">
-                Sustainable livelihoods
-              </h5>
+              <h4 className="services-details__content-title">
+                Community Engagement
+              </h4>
               <p className="services-details__content-item">
-                A portion of the donations is allocated towards conducting
-                awareness campaigns and educational programs to inform the
-                public about the consequences of child abandonment and advocate
-                for policy changes.
+                The success of the Clemente Charity Foundation is deeply rooted
+                in community engagement. The foundation actively involves local
+                communities, and understanding their unique needs has helped in
+                achieving so much heights.
               </p>
             </div>
-            {/* <div className="services-details__img">
-              <img src="" alt="icon" />
-            </div> */}
           </div>
         </>
       </div>

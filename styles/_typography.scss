@@ -1,12 +1,12 @@
-h2 {
+h1 {
   font-size: 56px;
   color: $title;
 
-  @include tab-port {
+  @include respond(tab-port) {
     font-size: 48px;
   }
 
-  @include phone {
+  @include respond(phone) {
     font-size: 32px;
   }
 }
@@ -14,11 +14,11 @@ h2 {
   font-size: 48px;
   color: $title;
 
-  @include tab-port {
+  @include respond(tab-port) {
     font-size: 36px;
   }
 
-  @include phone {
+  @include respond(phone) {
     font-size: 24px;
   }
 }
@@ -27,11 +27,11 @@ h3 {
   font-size: 28px;
   color: $title;
 
-  @include tab-port {
+  @include respond(tab-port) {
     font-size: 24px;
   }
 
-  @include phone {
+  @include respond(phone) {
     font-size: 20px;
   }
 }
@@ -39,12 +39,13 @@ h3 {
 h4 {
   font-size: 20px;
   color: $title;
+  margin-bottom: 10px;
 
-  @include tab-port {
+  @include respond(tab-port) {
     font-size: 18px;
   }
 
-  @include phone {
+  @include respond(phone) {
     font-size: 16px;
   }
 }
@@ -53,11 +54,11 @@ h5 {
   font-size: 14px;
   color: $title;
 
-  @include tab-port {
+  @include respond(tab-port) {
     font-size: 12px;
   }
 
-  @include phone {
+  @include respond(phone) {
     font-size: 10px;
   }
 }
@@ -66,11 +67,11 @@ h6 {
   font-size: 12px;
   color: $title;
 
-  @include tab-port {
+  @include respond(tab-port) {
     font-size: 10px;
   }
 
-  @include phone {
+  @include respond(phone) {
     font-size: 8px;
   }
 }
@@ -78,11 +79,11 @@ h6 {
 p {
   font-size: 16px;
 
-  @include tab-port {
+  @include respond(tab-port) {
     font-size: 14px;
   }
 
-  @include phone {
+  @include respond(phone) {
     font-size: 12px;
   }
 }

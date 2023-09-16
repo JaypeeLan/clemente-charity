@@ -17,41 +17,41 @@
   }
 }
 
-#team{
+#team {
   object-fit: cover;
 }
-.grid2{
+.grid2 {
   padding: 2rem 4rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-  }
-  .grid-items{
-    flex-basis: 48%;
-    text-align: start;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-    position: relative;
-  }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.grid-items {
+  flex-basis: 48%;
+  text-align: left;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
 .grid2 {
   @include respond(phone) {
     padding: 0 0;
-    .grid-items{
+    .grid-items {
       flex-basis: 100%;
-      margin:1rem auto;
-      .sub-header{
+      margin: 1rem auto;
+      .sub-header {
         padding-bottom: 30px;
       }
-      h3{
+      h3 {
         padding-bottom: 30px;
       }
-      p{
+      p {
         padding-bottom: 30px;
       }
-      .txt-cnt{
+      .txt-cnt {
         text-align: center;
       }
     }

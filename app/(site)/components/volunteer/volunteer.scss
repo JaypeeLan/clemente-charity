@@ -1,11 +1,11 @@
 .volunteer {
   background-color: $white;
 }
-.chartside{
+.chartside {
   color: $white !important;
 }
-.grid-item1 p{
-  color:$white;
+.grid-item1 p {
+  color: $white;
 }
 .contribute {
   width: 80%;
@@ -15,7 +15,6 @@
   background: url("/assets/gather2.jpg") center center/cover no-repeat;
   padding: 2rem;
   border-radius: 2rem;
-  
 
   &-btns {
     display: flex;
@@ -23,56 +22,60 @@
     gap: 2rem;
   }
 }
-.grid-2{
+.grid-2 {
   padding: 2rem 4rem;
   background: $bg-dark;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    // justify-content: space-around;
-    margin: auto;
-  }
-  .grid-item1{
-    flex-basis: 58%;
-    text-align: start;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-    position: relative;
-  }
-  .grid-item2{
-    flex-basis: 38%;
-    text-align: start;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-    position: relative;
-  }
-.mt-5{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.grid-item1 {
+  flex-basis: 58%;
+  text-align: start;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
+.grid-item2 {
+  flex-basis: 38%;
+  text-align: start;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
+.mt-5 {
   margin-top: 50px;
 }
-.mb-5{
+.mb-5 {
   margin-bottom: 50px;
 }
 
 .volunteer {
+  .cntr {
+    text-align: center;
+    max-width: 85%;
+  }
   @include respond(phone) {
-    .grid-2{
+    .grid-2 {
       padding: 1rem 2rem;
-      .grid-item1, .grid-item2{
-        flex-basis: 100%; 
+      .grid-item1,
+      .grid-item2 {
+        flex-basis: 100%;
       }
-      .cntr{
+      .cntr {
         text-align: center;
+        max-width: 100%;
       }
     }
-
   }
 }
 .contribute {
   @include respond(phone) {
     margin: 0 auto 2rem;
-
   }
 }

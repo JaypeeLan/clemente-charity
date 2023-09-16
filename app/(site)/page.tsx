@@ -11,10 +11,13 @@ export default function Home() {
     <>
       <section id="home" className="homepage">
         <h1 className={`homepage-title ${isDarkMode ? "dark" : "light"}`}>
-          Inclusive care for girls with  <br />special needs in all of Zimbabwe
+          Clemente Charity Foundation <br /> Empowering Lives, Inspiring Hope,
+          and Building a Better World
         </h1>
         <div className="bn">
-        <Link href="/media"><Buttons className="secondary mv">What we do</Buttons></Link>
+          <Link href="/media">
+            <Buttons className="secondary mv">What we do</Buttons>
+          </Link>
         </div>
       </section>
       <About />

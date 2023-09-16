@@ -9,7 +9,6 @@
         height: 50%;
         @include flex-container(space-between, flex-start);
         flex-direction: column;
-        
 
         &:last-child {
           padding: 1rem;
@@ -17,20 +16,20 @@
       }
     }
   }
-  #team{
+  #team {
     object-fit: cover;
   }
-.sect{
-  background: $bg;
-}
+  .sect {
+    background: $bg;
+  }
   .header-title {
     color: $title;
     text-transform: uppercase;
   }
-  .start{
+  .start {
     display: flex;
     flex-direction: column;
-    align-items:start;
+    align-items: flex-start;
     margin-right: 170px;
   }
   .sub-title {
@@ -58,66 +57,65 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  text-align: start;
+  text-align: left;
 }
 
 .aims {
   flex-basis: 50%;
- 
 }
-.pt-3{
+.pt-3 {
   padding-top: 30px;
 }
-.pt-5{
+.pt-5 {
   padding-top: 50px;
 }
-.mb-5{
+.mb-5 {
   margin-bottom: 50px;
 }
 
-.grid2{
+.grid2 {
   padding: 2rem 4rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-  }
-  .grid-items{
-    flex-basis: 48%;
-    text-align: start;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-    position: relative;
-  }
-  .grid3{
-    padding: 2rem 4rem;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-      margin: auto;
-    }
-    .grid-item{
-      flex-basis: 32%;
-    }
-    .text-center{
-      text-align: center;
-    }
-    .sub-header{
-      width: 60%;
-      margin: 0 auto;
-      text-align: center;
-    }
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.grid-items {
+  flex-basis: 48%;
+  text-align: left;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
+.grid3 {
+  padding: 2rem 4rem;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.grid-item {
+  flex-basis: 32%;
+}
+.text-center {
+  text-align: center;
+}
+.sub-header {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+}
 
-    .about-page{
-      @include respond(phone) {
-        #team{
-          padding:0 1rem;
-        }
-        .grid2{
-          padding: 2rem;
-        }
-      }
+.about-page {
+  @include respond(phone) {
+    #team {
+      padding: 0 1rem;
     }
+    .grid2 {
+      padding: 2rem;
+    }
+  }
+}

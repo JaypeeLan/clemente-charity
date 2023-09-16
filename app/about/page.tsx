@@ -13,17 +13,29 @@ const Page = () => {
 
         <div className="grid-items">
           <h4 className="paragraph">
-          We are a dedicated organization founded to support abandoned children and their welfare. Our primary aim is to provide a safe and nurturing environment for these children, promoting their physical, emotional, and cognitive development.
+            We are a dedicated organization founded to support abandoned
+            children and their welfare. Our primary aim is to provide a safe and
+            nurturing environment for these children, promoting their physical,
+            emotional, and cognitive development.
           </h4>
           <br />
           <p className="paragraph">
-           We ensure that they have access to basic healthcare and nutrition, and work towards reintegrating them into loving and stable families. Additionally, we raise awareness about child abandonment and advocate for policy changes to prevent it. Through our residential homes, comprehensive care services, educational programs, and collaborations with healthcare providers and adoption agencies, we strive to make a positive impact in the lives of abandoned children. With your support, we can continue to provide the love, care, and opportunities they deserve.
+            We ensure that they have access to basic healthcare and nutrition,
+            and work towards reintegrating them into loving and stable families.
+            Additionally, we raise awareness about child abandonment and
+            advocate for policy changes to prevent it. Through our residential
+            homes, comprehensive care services, educational programs, and
+            collaborations with healthcare providers and adoption agencies, we
+            strive to make a positive impact in the lives of abandoned children.
+            With your support, we can continue to provide the love, care, and
+            opportunities they deserve.
           </p>
         </div>
       </div>
 
       <div className="p-5 text-center">
-        <Image id="team"
+        <Image
+          id="team"
           src="/assets/group.jpg"
           width={900}
           height={450}
@@ -70,7 +82,7 @@ const Page = () => {
         </div>
         <div className="grid3 pb-7">
           <div className="grid-items">
-            <h5>Shelter</h5>
+            <h4>Shelter</h4>
             <p>
               To provide a safe and nurturing environment for abandoned children
               and to facilitate the reintegration of abandoned children into
@@ -78,7 +90,7 @@ const Page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Healthcare</h5>
+            <h4>Healthcare</h4>
             <p>
               To promote the physical, emotional, and cognitive development of
               abandoned children. To ensure that abandoned children have access
@@ -86,7 +98,7 @@ const Page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Education</h5>
+            <h4>Education</h4>
             <p>
               To meet the unique needs of abandoned children, Develop and
               implement programs that promote the physical, emotional, and
@@ -95,7 +107,7 @@ const Page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Basic amenities</h5>
+            <h4>Basic amenities</h4>
             <p>
               Establish and operate residential homes for abandoned children,
               providing them with a secure and loving environment with provision
@@ -104,7 +116,7 @@ const Page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Medicals</h5>
+            <h4>Medicals</h4>
             <p>
               Collaborate with local hospitals, clinics, and healthcare
               providers to ensure abandoned children receive necessary medical
@@ -113,7 +125,7 @@ const Page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Public outreach</h5>
+            <h4>Public outreach</h4>
             <p>
               Conduct awareness campaigns and educational programs to inform the
               public about the consequences of child abandonment and the
@@ -124,7 +136,7 @@ const Page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Seek your Support</h5>
+            <h4>Seek your Support</h4>
             <p>
               Fundraise and seek financial support from individuals,
               corporations, and grant-making organizations to sustain and expand
@@ -132,7 +144,7 @@ const Page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Conduct Researchs and Outreachs</h5>
+            <h4>Conduct Researchs and Outreachs</h4>
             <p>
               Conduct research and collect data on child abandonment to better
               understand the issue and inform evidence-based interventions and

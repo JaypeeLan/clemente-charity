@@ -1,129 +1,129 @@
 .media {
-    padding: 1rem 4rem;
-    background: $bg;
-    @include flex-container;
-    &-hero {
-      @include grid(1rem);
-      width: 100%;
-  
-      // padding-left: 2rem;
-  
-      > div {
-        max-width: 90%;
-        @include flex-container(
-          $flex-direction: column,
-          $align-items: flex-start,
-          $gap: 4rem
-        );
-      }
+  padding: 1rem 4rem;
+  background: $bg;
+  @include flex-container;
+  &-hero {
+    @include grid(1rem);
+    width: 100%;
+
+    // padding-left: 2rem;
+
+    > div {
+      max-width: 90%;
+      @include flex-container(
+        $flex-direction: column,
+        $align-items: flex-start,
+        $gap: 4rem
+      );
     }
   }
-#team{
+}
+#team {
   object-fit: cover;
 }
-.grid2{
+.grid2 {
   padding: 2rem 4rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-  }
-.grid3{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+.grid3 {
   padding: 2rem 4rem;
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: auto;
-  }
-  p{
-    color: $black;
-  }
-  .projects{
-    background: $bg;
-  }
-  .grid-items{
-    flex-basis: 48%;
-    text-align: start;
-    border-radius: 7px;
-    margin-bottom: 20px;
-    color: #fff;
-    position: relative;
-  }
-  .grid-item{
-    flex-basis: 32%;
-  }
-.pt-2{
-    padding-top: 20px;
-  }
-  .pt-5{
-    padding-top: 50px;
-  }
-  .pt-7{
-    padding-top: 70px;
-  }
-  .pb-2{
-    padding-bottom: 20px;
-  }
-  .pb-5{
-    padding-bottom: 50px;
-  }
-  .pb-7{
-    padding-bottom: 70px;
-  }
-  .p-3{
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .p-5{
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-  .p-7{
-    padding-top: 70px;
-    padding-bottom: 70px;
-  }
-.sub-head{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+}
+p {
+  color: $black;
+}
+.projects {
+  background: $bg;
+}
+.grid-items {
+  flex-basis: 48%;
+  text-align: left;
+  border-radius: 7px;
+  margin-bottom: 20px;
+  color: #fff;
+  position: relative;
+}
+.grid-item {
+  flex-basis: 32%;
+}
+.pt-2 {
+  padding-top: 20px;
+}
+.pt-5 {
+  padding-top: 50px;
+}
+.pt-7 {
+  padding-top: 70px;
+}
+.pb-2 {
+  padding-bottom: 20px;
+}
+.pb-5 {
+  padding-bottom: 50px;
+}
+.pb-7 {
+  padding-bottom: 70px;
+}
+.p-3 {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.p-5 {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.p-7 {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.sub-head {
   text-align: center;
 }
-  .media.grid2{
-    @include respond(phone){
-      padding: 2rem 2rem;
-      .adj{
-        padding-left: 0;
-      }
-      .cntr{
-        text-align: center;
-      }
-      .grid-items{
-        flex-basis: 100%;
-      }
+.media.grid2 {
+  @include respond(phone) {
+    padding: 2rem 2rem;
+    .adj {
+      padding-left: 0;
+    }
+    .cntr {
+      text-align: center;
+    }
+    .grid-items {
+      flex-basis: 100%;
     }
   }
-  .special {
-    @include respond(phone){
-      .sub-head{
-        padding-left: 1rem;
-      }
-      .grid3{
-        padding: 2rem;
-      }
-      .grid-items{
-        flex-basis: 100%;
-      }
+}
+.special {
+  @include respond(phone) {
+    .sub-head {
+      padding-left: 1rem;
+    }
+    .grid3 {
+      padding: 2rem;
+    }
+    .grid-items {
+      flex-basis: 100%;
     }
   }
-  .projects {
-    @include respond(phone){
-      .sub-head{
-        padding: 0 1rem;
-      }
-      .grid3{
-        padding: 2rem;
-      }
-      .grid-items{
-        flex-basis: 100%;
-      }
+}
+.projects {
+  @include respond(phone) {
+    .sub-head {
+      padding: 0 1rem;
+    }
+    .grid3 {
+      padding: 2rem;
+    }
+    .grid-items {
+      flex-basis: 100%;
     }
   }
+}

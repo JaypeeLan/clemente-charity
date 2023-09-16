@@ -6,7 +6,7 @@ const page = () => {
     <div>
       <div className="media pt-7 grid2">
         <div className="  grid-items">
-          <h5 className="">WHAT WE DO</h5>
+          <h4 className="">WHAT WE DO</h4>
           <h3 className="pt-2">
             Our goal is to <br /> provide inclusive <br /> care for children{" "}
             <br /> with special needs
@@ -18,16 +18,15 @@ const page = () => {
           </p>
         </div>
 
-
         <div className="team-photograph grid-items">
-          <Image id="team"
+          <Image
+            id="team"
             src="/assets/gather.jpg"
             width={500}
             height={300}
             alt="team photo"
           />
         </div>
-
       </div>
 
       <article className="special">
@@ -36,7 +35,7 @@ const page = () => {
         </div>
         <div className="grid3 pb-7">
           <div className="grid-items">
-            <h5>Comprehensive Care Services</h5>
+            <h4>Comprehensive Care Services</h4>
             <p>
               Funds are allocated towards providing comprehensive care services,
               including education, healthcare, counseling, and recreational
@@ -44,7 +43,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Medical Support</h5>
+            <h4>Medical Support</h4>
             <p>
               Donations are utilized to collaborate with local hospitals,
               clinics, and healthcare providers to ensure that abandoned
@@ -53,7 +52,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Adoption and Foster Care</h5>
+            <h4>Adoption and Foster Care</h4>
             <p>
               Contributions are used to facilitate the adoption or foster care
               placement of abandoned children into suitable families, ensuring
@@ -61,7 +60,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Awareness Campaigns</h5>
+            <h4>Awareness Campaigns</h4>
             <p>
               A portion of the donations is allocated towards conducting
               awareness campaigns and educational programs to inform the public
@@ -70,7 +69,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Residential Homes</h5>
+            <h4>Residential Homes</h4>
             <p>
               Donations are used to establish and operate safe and nurturing
               residential homes for abandoned children, providing them with
@@ -78,7 +77,7 @@ const page = () => {
             </p>
           </div>
           <div className="grid-items">
-            <h5>Public outreach</h5>
+            <h4>Public outreach</h4>
             <p>
               We organize various fundraising events throughout the year, this
               way individuals can participate, join, support the progam and
@@ -92,14 +91,15 @@ const page = () => {
         <div className="sub-head">
           <h4 className="pt-5">Projects we have done</h4>
           <h3 className="p-3">
-            We are creating a place where children <br /> with special {" "}
-            needs can thrive
+            We are creating a place where children <br /> with special needs can
+            thrive
           </h3>
         </div>
 
         <div className="grid3">
           <div className="grid-item">
-            <Image id="team"
+            <Image
+              id="team"
               src="/assets/hall.jpg"
               width={400}
               height={250}
@@ -107,7 +107,8 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image id="team"
+            <Image
+              id="team"
               src="/assets/gather2.jpg"
               width={400}
               height={250}
@@ -115,7 +116,8 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image id="team"
+            <Image
+              id="team"
               src="/assets/handout.jpg"
               width={400}
               height={250}
@@ -123,7 +125,8 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image id="team"
+            <Image
+              id="team"
               src="/assets/children.jpg"
               width={400}
               height={250}
@@ -131,7 +134,8 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image id="team"
+            <Image
+              id="team"
               src="/assets/upclose.jpg"
               width={400}
               height={250}
@@ -139,7 +143,8 @@ const page = () => {
             />
           </div>
           <div className="grid-item">
-            <Image id="team"
+            <Image
+              id="team"
               src="/assets/upclose2.jpg"
               width={400}
               height={250}
