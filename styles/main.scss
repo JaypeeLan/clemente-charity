@@ -2,24 +2,19 @@
 // @import "variables";
 @import "responsiveness.scss";
 @import "mixins";
-// @import "font";
-// @import "helpers";
+
 @import "base";
 
 @import "typography";
-// @import "keyframes";
 
-// @import "links";
-// @import "loader";
-
-@import "/app/components//buttons/buttons";
-@import "/app/components//navbar/navbar";
-@import "/app//components/footer/footer";
-@import "/app/(site)/home";
-@import "/app/(site)/components/about/about";
-@import "/app/(site)/components/services/service";
-@import "/app/(site)/components/volunteer/volunteer";
-@import "/app//about/about";
-@import "/app/contact/contact.scss";
-@import "/app/media/media.scss";
-@import "/app/donate/donate.scss";
+@import "/components/buttons/buttons";
+@import "/components/navbar/navbar";
+@import "/components/footer/footer";
+@import "/pages/(site)/home";
+@import "/pages/(site)/components/about/about";
+@import "/pages/(site)/components/services/service";
+@import "/pages/(site)/components/volunteer/volunteer";
+@import "/pages/about/about";
+@import "/pages/contact/contact";
+@import "/pages/media/media";
+@import "/pages/donate/donate";

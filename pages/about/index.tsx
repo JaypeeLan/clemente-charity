@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Page = () => {
+const About = () => {
   return (
     <div className="about-page">
       <div className="grid2 pt-7 sect">
@@ -157,4 +157,4 @@ const Page = () => {
   );
 };
 
-export default Page;
+export default About;

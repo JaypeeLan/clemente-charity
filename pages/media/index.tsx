@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const page = () => {
+const Media = () => {
   return (
     <div>
       <div className="media pt-7 grid2">
@@ -157,4 +157,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Media;

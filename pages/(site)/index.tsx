@@ -1,11 +1,10 @@
-"use client";
-import Buttons from "../components/buttons/Buttons";
+import Buttons from "../../components/buttons/Buttons";
 import About from "./components/about/About";
 import Link from "next/link";
 import Volunteer from "./components/volunteer/Volunteer";
 import { useTheme } from "@/context/ThemeContext";
 
-export default function Home() {
+export default function LandingPage() {
   const { isDarkMode } = useTheme();
   return (
     <>

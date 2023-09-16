@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Services from "../services/Services";
-import Buttons from "@/app/components/buttons/Buttons";
+import Buttons from "@/components/buttons/Buttons";
 
 const About = () => {
   return (

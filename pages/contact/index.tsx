@@ -2,7 +2,8 @@
 import React, { useEffect, useState } from "react";
 import { FiFacebook, FiInstagram, FiLinkedin } from "react-icons/fi";
 import Link from "next/link";
-import Buttons from "../components/buttons/Buttons";
+import Buttons from "../../components/buttons/Buttons";
+import { sendContactForm } from "@/lib/api";
 
 const InputFormFields = ({
   label,
@@ -66,8 +67,7 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     try {
-      // Replace with your actual API call
-      // await axios.post('/api/contact', formValues);
+      await sendContactForm(formValues);
     } catch (error) {
       console.error(error);
     } finally {

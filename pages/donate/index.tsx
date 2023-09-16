@@ -1,9 +1,9 @@
 import React from "react";
 import Image from "next/image";
-import Buttons from "../components/buttons/Buttons";
+import Buttons from "../../components/buttons/Buttons";
 import Link from "next/link";
 
-const page = () => {
+const Donate = () => {
   return (
     <div>
       <div className="grid2 p-7 sect">
@@ -82,4 +82,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Donate;
