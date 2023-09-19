@@ -1,11 +1,10 @@
 import React from "react";
 import Image from "next/image";
-import { motion } from 'framer-motion';
 
 const Media = () => {
   return (
     <div>
-      <motion.div animate={{  }} className="media pt-7 grid2">
+      <div className="media pt-7 grid2">
         
         <div className="  grid-items">
           <h4 className="">WHAT WE DO</h4>
@@ -29,7 +28,7 @@ const Media = () => {
             alt="team photo"
           />
         </div>
-      </motion.div>
+      </div>
 
       <article className="special">
         <div className="sub-head pt-7 pb-2">
