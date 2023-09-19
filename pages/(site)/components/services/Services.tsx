@@ -5,7 +5,8 @@ const Services = () => {
   const services = [{}];
   return (
     <div className="services grid2 pt-7">
-      <div grid-items>
+
+      <div grid-items >
         <Image
           id="team"
           src="/assets/girl.jpg"
@@ -14,11 +15,10 @@ const Services = () => {
           height={600}
         />
       </div>
-      <div className="grid-items">
-        <div className="txt-cnt">
+
+      <div className="grid-items pt-5">
           <h4 className="pb-2">WHAT WE DO</h4>
           <h3>Some services we provide</h3>
-        </div>
         <br />
         <p>
           To provide a safe and nurturing environment for abandoned children and
@@ -26,14 +26,12 @@ const Services = () => {
           stable families.
         </p>
         <br />
-
-        <>
-          <div className="services-details pb-2">
-            <div className="services-details__content">
-              <h4 className="services-details__content-title">
+          <div>
+            <div>
+            <h4>
                 Commitment to the Less Privileged
               </h4>
-              <p className="services-details__content-item">
+              <p className="pb-2">
                 At the heart of the Clemente Charity Foundation lies an
                 unwavering commitment to the less privileged. With compassion as
                 their guiding force, the foundation has strived to bridge the
@@ -44,12 +42,14 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="services-details pb-2">
-            <div className="services-details__content">
-              <h4 className="services-details__content-title">
+
+
+          <div>
+            <div>
+            <h4>
                 Addressing Challenges
               </h4>
-              <p className="services-details__content-item">
+              <p className="pb-2">
                 The foundation recognizes the challenges faced by marginalized
                 communities and strives to alleviate their burdens. By focusing
                 on areas like the Makoko slum, the foundation has tackled issues
@@ -61,12 +61,15 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="services-details pb-2">
-            <div className="services-details__content">
-              <h4 className="services-details__content-title">
+
+
+          
+          <div className="pb-2">
+            <div>
+              <h4>
                 Education for a Brighter Future
               </h4>
-              <p className="services-details__content-item">
+              <p className="pb-2">
                 Education is a cornerstone of the foundation's work.
                 Understanding the transformative power of knowledge, the
                 foundation has taken significant strides to provide quality
@@ -75,12 +78,14 @@ const Services = () => {
               </p>
             </div>
           </div>
-          <div className="services-details ">
-            <div className="services-details__content">
-              <h4 className="services-details__content-title">
+
+
+          <div className="pb-2">
+            <div>
+              <h4>
                 Community Engagement
               </h4>
-              <p className="services-details__content-item">
+              <p className="pb-2">
                 The success of the Clemente Charity Foundation is deeply rooted
                 in community engagement. The foundation actively involves local
                 communities, and understanding their unique needs has helped in
@@ -88,7 +93,6 @@ const Services = () => {
               </p>
             </div>
           </div>
-        </>
       </div>
     </div>
   );

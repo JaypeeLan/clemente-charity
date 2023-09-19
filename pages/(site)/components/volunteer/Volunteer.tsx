@@ -6,9 +6,10 @@ import Buttons from "@/components/buttons/Buttons";
 const Volunteer = () => {
   return (
     <div className="volunteer">
+
       <div className="grid-2 mt-5 mb-5">
         <div className="grid-item1">
-          <div className="cntr">
+          <div className="textcenter">
             <h2 className="chartside">
               How we spend your <br /> donations and where it goes
             </h2>

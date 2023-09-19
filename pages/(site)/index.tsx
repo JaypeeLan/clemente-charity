@@ -9,14 +9,25 @@ export default function LandingPage() {
   return (
     <>
       <section id="home" className="homepage">
-        <h1 className={`homepage-title ${isDarkMode ? "dark" : "light"}`}>
+        <h1 id="homepage-text" className={`homepage-title ${isDarkMode ? "dark" : "light"}`}>
           Clemente Charity Foundation <br /> Empowering Lives, Inspiring Hope,
           and Building a Better World
         </h1>
-        <div className="bn">
+        <div>
           <Link href="/media">
             <Buttons className="secondary mv">What we do</Buttons>
           </Link>
+
+          <div className="grid-3">
+
+        <div className="grid-itms"><p>230 children under our care</p></div>
+
+        <div className="grid-itms "> <div className="line"></div>
+        </div>
+
+        <div className="grid-itms"><p>58 Donations collected</p></div>
+      </div>
+      
         </div>
       </section>
       <About />

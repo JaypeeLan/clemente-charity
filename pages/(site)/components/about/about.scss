@@ -16,7 +16,7 @@
   text-align: center;
 }
 .grid2 {
-  padding: 2rem 4rem;
+  padding: 2rem;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -37,9 +37,19 @@ section.about {
   @include respond(phone) {
     .grid2 {
       padding: 1rem 2rem;
-      .subz {
-        text-align: center;
+      .grid-items {
+        flex-basis: 100%;
       }
+    }
+  }
+}
+section.about {
+  @include respond(tab-port) {
+    .grid2 {
+      padding: 1rem 2rem;
+    }
+    .grid-items {
+      flex-basis: 100%;
     }
   }
 }

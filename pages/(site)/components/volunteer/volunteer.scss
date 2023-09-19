@@ -56,9 +56,9 @@
 }
 
 .volunteer {
-  .cntr {
+  .textcenter {
     text-align: center;
-    max-width: 85%;
+    max-width: 90%;
   }
   @include respond(phone) {
     .grid-2 {
@@ -67,9 +67,26 @@
       .grid-item2 {
         flex-basis: 100%;
       }
-      .cntr {
+      .textcenter {
         text-align: center;
-        max-width: 100%;
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+.volunteer{
+  @include respond(tab-port) {
+    .grid-2 {
+      padding: 1rem 2rem;
+      .grid-item1,
+      .grid-item2 {
+        flex-basis: 100%;
+      }
+      .textcenter {
+        text-align: center;
+        max-width: 70%;
+        margin: 0 auto;
       }
     }
   }

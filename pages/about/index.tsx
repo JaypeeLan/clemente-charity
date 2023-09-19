@@ -6,7 +6,7 @@ const About = () => {
       <div className="grid2 pt-7 sect">
         <div className="grid-items">
           <h4 className="header-title">Know about us</h4>
-          <h3 className="sub-title pt-5">
+          <h3 className="sub-title p-5 ">
             We are a non- <br /> governmental organization
           </h3>
         </div>

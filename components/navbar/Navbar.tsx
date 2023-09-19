@@ -66,6 +66,7 @@ export default function Navbar() {
                 <>Donate</>
               </Link>
             </div>
+            
             <button
               className="mobile-menu-icon"
               onClick={() => setIsOpen(!isOpen)}
