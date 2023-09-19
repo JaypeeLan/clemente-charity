@@ -119,3 +119,13 @@
     }
   }
 }
+.about-page {
+  @include respond(tab-port) {
+    #team {
+      padding: 0 1rem;
+    }
+    .grid2 {
+      padding: 2rem;
+    }
+  }
+}

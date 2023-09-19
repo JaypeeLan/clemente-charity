@@ -1,4 +1,4 @@
-.media {
+  .media {
   padding: 1rem 4rem;
   background: $bg;
   @include flex-container;
@@ -101,8 +101,39 @@ p {
     }
   }
 }
+.media.grid2 {
+  @include respond(tab-port) {
+    padding: 2rem 2rem;
+    .adj {
+      padding-left: 0;
+    }
+    .cntr {
+      text-align: center;
+    }
+    .grid-items {
+      flex-basis: 100%;
+      img{
+        width: 100%;
+        height: 500px;
+      }
+    }
+  }
+}
 .special {
   @include respond(phone) {
+    .sub-head {
+      padding-left: 1rem;
+    }
+    .grid3 {
+      padding: 2rem;
+    }
+    .grid-items {
+      flex-basis: 100%;
+    }
+  }
+}
+.special {
+  @include respond(tab-port) {
     .sub-head {
       padding-left: 1rem;
     }
@@ -125,5 +156,36 @@ p {
     .grid-items {
       flex-basis: 100%;
     }
+    .grid-item {
+      flex-basis: 100%;
+      text-align: center;
+      img{
+        width: 100%;
+        height: 250px !important;
+      }
+    }
   }
 }
+.projects {
+  @include respond(tab-port) {
+    .sub-head {
+      padding: 0 1rem;
+    }
+    .grid3 {
+      padding: 2rem;
+    }
+    .grid-items {
+      flex-basis: 100%;
+    }
+    .grid-item {
+      flex-basis: 100%;
+      text-align: center;
+      img{
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+

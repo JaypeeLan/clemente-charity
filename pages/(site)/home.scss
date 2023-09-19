@@ -6,9 +6,6 @@
   justify-content: center;
   padding: 4rem;
 }
-.bn{
-  margin-bottom: 9rem;
-}
 .homepage {
   background: url("/assets/gather.jpg") center center/cover no-repeat;
   background-size: cover;
@@ -25,7 +22,7 @@
   @include respond(phone){
     text-align: center;
     padding: 1rem;
-    h1{
+    #homepage-text{
       font-size: 40px;
     }
   }
@@ -50,24 +47,46 @@
     flex-basis: 48%;
   }
   .grid-itms{
-    flex-basis: 24%;
-    text-align: start;
-    border-radius: 7px;
+    flex-basis: 32%;
+    text-align: center;
+    // border-radius: 7px;
     // margin-bottom: 1px;
     color: #fff;
     position: relative;
   }
-
+.line{
+  border-top: 2px solid white;
+  margin-top: 10px;
+}
  .grid-3 {
     @include respond(phone){
       .grid-itms{
         flex-basis: 80%;
         text-align: center;
         margin-bottom: 20px;
-        hr{
-          max-width: 100px;
-          margin: 0 auto;
-        }
+        // hr{
+        //   max-width: 100px;
+        //   margin: 0 auto;
+        // }
+      }
+    }
+  }
+
+  #home{
+    @include respond(tab-port) {
+      text-align: center;
+    padding: 1rem;
+    #homepage-text{
+      font-size: 40px;
+    }
+    }
+  }
+  .grid-3 {
+    @include respond(tab-port){
+      .grid-itms{
+        flex-basis: 32%;
+        // text-align: center;
+        margin-bottom: 20px;
       }
     }
   }

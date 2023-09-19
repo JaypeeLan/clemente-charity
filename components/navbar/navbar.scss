@@ -53,7 +53,45 @@ nav {
       }
     }
   }
+  li {
+    margin-left: 2rem;
 
+    a {
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        border-bottom: 2px solid black;
+      }
+    }
+  }
+}
+.menu {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+
+  @include respond(tab-port) {
+    position: fixed;
+    top: 80px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 80px);
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: white;
+    transition: 0.3s ease-in-out;
+
+    &.open {
+      @include respond(tab-port) {
+        left: 0;
+        transition: 0.3s ease-in-out;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+        z-index: 999;
+      }
+    }
+  }
   li {
     margin-left: 2rem;
 
@@ -109,6 +147,7 @@ div.donate {
 .mobile-menu-icon {
   display: none;
 }
+
 div.donate {
   @include respond(phone) {
     padding: 0;
@@ -119,17 +158,95 @@ div.donate {
     }
   }
 }
+div.donate {
+  @include respond(tab-port) {
+    padding: 0;
+    a {
+      margin-left: 0;
+      margin-right: 1rem;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
 div.container {
   @include respond(phone) {
     align-items: center;
   }
 }
+
+div.container {
+  @include respond(tab-port) {
+    align-items: center;
+  }
+}
+
 #logoo {
   object-fit: cover;
   margin-left: 2rem;
 }
 
 @include respond(phone) {
+  .menu {
+    &.open {
+      li {
+        margin-left: 0;
+        margin-bottom: 2rem;
+        a {
+          font-size: 1.5rem;
+        }
+      }
+
+      li:last-child {
+        margin-bottom: 0;
+      }
+
+      li:first-child {
+        margin-top: 2rem;
+      }
+
+      li:hover {
+        cursor: pointer;
+      }
+
+      li:hover a {
+        color: #333;
+        border-bottom: none;
+      }
+
+      li.active a {
+        color: #333;
+        border-bottom: none;
+      }
+
+      li.active:hover a {
+        color: #333;
+        border-bottom: none;
+      }
+
+      li.active:hover {
+        cursor: pointer;
+      }
+
+      li.active {
+        cursor: pointer;
+      }
+    }
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    font-size: 1.5rem;
+    border: none;
+    background-color: transparent;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@include respond(tab-port) {
   .menu {
     &.open {
       li {

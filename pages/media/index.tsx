@@ -1,10 +1,12 @@
 import React from "react";
 import Image from "next/image";
+import { motion } from 'framer-motion';
 
 const Media = () => {
   return (
     <div>
-      <div className="media pt-7 grid2">
+      <motion.div animate={{  }} className="media pt-7 grid2">
+        
         <div className="  grid-items">
           <h4 className="">WHAT WE DO</h4>
           <h3 className="pt-2">
@@ -27,7 +29,7 @@ const Media = () => {
             alt="team photo"
           />
         </div>
-      </div>
+      </motion.div>
 
       <article className="special">
         <div className="sub-head pt-7 pb-2">
@@ -97,6 +99,7 @@ const Media = () => {
         </div>
 
         <div className="grid3">
+          
           <div className="grid-item">
             <Image
               id="team"
@@ -106,6 +109,7 @@ const Media = () => {
               alt="team photo"
             />
           </div>
+
           <div className="grid-item">
             <Image
               id="team"
@@ -115,6 +119,7 @@ const Media = () => {
               alt="team photo"
             />
           </div>
+
           <div className="grid-item">
             <Image
               id="team"
@@ -124,6 +129,7 @@ const Media = () => {
               alt="team photo"
             />
           </div>
+
           <div className="grid-item">
             <Image
               id="team"
@@ -133,6 +139,7 @@ const Media = () => {
               alt="team photo"
             />
           </div>
+
           <div className="grid-item">
             <Image
               id="team"
@@ -142,6 +149,7 @@ const Media = () => {
               alt="team photo"
             />
           </div>
+
           <div className="grid-item">
             <Image
               id="team"
@@ -151,6 +159,7 @@ const Media = () => {
               alt="team photo"
             />
           </div>
+
         </div>
       </div>
     </div>

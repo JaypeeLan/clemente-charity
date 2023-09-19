@@ -59,9 +59,7 @@ label {
   color: #fff;
   // position: relative;
 }
-.nb{
-  padding-left: 4rem;
-}
+
 .grid2 {
   padding: 2rem;
   width: 100%;
@@ -69,6 +67,9 @@ label {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
+  .nb{
+    padding-left: 4rem;
+  }
 }
 .grid-items {
   flex-basis: 48%;

@@ -82,3 +82,29 @@
     }
   }
 }
+.footer {
+  @include respond(tab-port) {
+    display: block;
+    padding: 2rem 4rem;
+    .mb-4 {
+      margin-bottom: 4rem;
+    }
+    .mb-2 {
+      margin-bottom: 2rem;
+    }
+    .logo-main {
+      text-align: center;
+      .logo {
+        padding-bottom: 50px;
+      }
+    }
+  }
+}
+
+footer{
+ @include respond(tab-port){
+  .footer-links{
+  align-items: center;
+  }
+ }
+}

@@ -6,9 +6,10 @@ import Link from "next/link";
 const Donate = () => {
   return (
     <div>
-      <div className="grid2 p-7 sect">
+      <div className="grid2 bg-gray">
+
         <div className="grid-items">
-          <h3>Donate</h3>
+          <h3>DONATE</h3>
           <h4 className="pt-5">Make a donation for our children.</h4>
           <p className="pt-5">
             We Collaborate with other organizations, both locally and
@@ -20,6 +21,7 @@ const Donate = () => {
             <Buttons className="secondary">Send Message</Buttons>
           </Link>
         </div>
+
         <div className="grid-items text-center">
           <Image
             id="team"
