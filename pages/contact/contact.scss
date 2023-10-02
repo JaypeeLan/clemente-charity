@@ -1,5 +1,4 @@
 .contact {
-  // padding: 3rem 4rem;
   background: $bg;
   @include flex-container;
   &-hero {
@@ -12,6 +11,12 @@
         $gap: 4rem
       );
     }
+  }
+
+  &-form {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 900px;
   }
 }
 .social {
@@ -67,7 +72,7 @@ label {
   flex-wrap: wrap;
   justify-content: space-around;
   margin: auto;
-  .nb{
+  .nb {
     padding-left: 4rem;
   }
 }
@@ -109,7 +114,7 @@ label {
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
-    width: 150%;
+    width: 100%;
     margin: 0 0 1rem;
   }
 }
@@ -123,31 +128,25 @@ label {
     padding-top: 20px;
   }
 }
-.grid2{
+.grid2 {
   @include respond(phone) {
-    .grid-items{
-      padding:0;
+    .grid-items {
+      padding: 0;
     }
   }
 }
 .contact-form__message {
-  width: 50%;
+  width: 100%;
 
-  @include respond(phone) {
-    width: 70%;
+  > textarea {
+    width: 100%;
+    padding: 1rem 1rem 10rem 1rem;
   }
+
   margin: 0 auto;
   padding: 0;
   .send {
     text-align: center;
-  }
-  textarea#message {
-    padding: 24px;
-    margin: 16px auto;
-    font-size: 16px;
-    border-radius: 10px;
-    width: 100%;
-    min-height: 15rem;
   }
 }
 
@@ -178,7 +177,8 @@ label {
 .contact-section {
   @include respond(phone) {
     .contact-form {
-      margin: 0px;
+      max-width: 80%;
+      margin: 0 auto;
       text-align: left;
       &__right {
         margin-right: 0;
@@ -225,4 +225,34 @@ label {
 .p-7 {
   padding-top: 70px;
   padding-bottom: 70px;
+}
+
+.submit {
+  margin-top: 10px;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  width: max-content;
+  border-radius: 5px;
+  background-color: $primary;
+  color: $white;
+  outline: none;
+  border: none;
+
+  :hover {
+    background-color: $white;
+    color: $primary;
+  }
+}
+
+.success-message {
+  color: $primary;
+  font-size: 18px;
+  font-style: bold;
+}
+
+.error-message {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
 }

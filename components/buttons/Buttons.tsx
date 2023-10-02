@@ -8,6 +8,7 @@ interface ButtonProps {
   type?: "button" | "submit" | "reset" | undefined;
   disabled?: boolean;
   loading?: boolean;
+  onClick?: any;
 }
 
 const Buttons = ({
@@ -16,11 +17,13 @@ const Buttons = ({
   type,
   disabled = false,
   loading = false,
+  onClick,
 }: ButtonProps) => {
   const { isDarkMode } = useTheme();
 
   return (
     <button
+      onClick={onClick}
       type={type}
       disabled={disabled || loading}
       className={`btn ${isDarkMode ? "dark" : "light"} ${
