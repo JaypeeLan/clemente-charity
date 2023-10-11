@@ -1,20 +1,25 @@
+import Buttons from "@/components/buttons/Buttons";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import Services from "../services/Services";
-import Buttons from "@/components/buttons/Buttons";
-
 const About = () => {
   return (
     <>
-      <section className="about">
+      <motion.section className="about">
         <div className="grid2">
-          <div className="grid-items pt-5">
-              <h4>Know About Us</h4>
-              <h3 className="pt-3">
-                Clemente Charity Foundation empowers and inspires hope in
-                underserved communities through education, support, and
-                community engagement.
-              </h3>
+          <motion.div
+            className="grid-items pt-5"
+            initial={{ y: 20, opacity: 0 }}
+            whileInView={{ y: 0, opacity: 1 }}
+            transition={{ delay: 0.5, type: "spring", stiffness: 20 }}
+          >
+            <h4>Know About Us</h4>
+            <h3 className="pt-3">
+              Clemente Charity Foundation empowers and inspires hope in
+              underserved communities through education, support, and community
+              engagement.
+            </h3>
 
             <p className="pt-3">
               In a world filled with challenges and inequalities, there are
@@ -32,9 +37,14 @@ const About = () => {
             <Link href="/about">
               <Buttons className="secondary">Learn more</Buttons>
             </Link>
-          </div>
+          </motion.div>
 
-          <div className="grid-items text-center">
+          <motion.div
+            className="grid-items text-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ type: "spring", stiffness: 30 }}
+          >
             <Image
               id="team"
               src="/assets/upclose.jpg"
@@ -42,9 +52,9 @@ const About = () => {
               height={400}
               alt="team photo"
             />
-          </div>
+          </motion.div>
         </div>
-      </section>
+      </motion.section>
       <Services />
     </>
   );

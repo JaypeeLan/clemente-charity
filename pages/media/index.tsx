@@ -1,11 +1,9 @@
-import React from "react";
 import Image from "next/image";
 
 const Media = () => {
   return (
     <div>
       <div className="media pt-7 grid2">
-        
         <div className="  grid-items">
           <h4 className="">WHAT WE DO</h4>
           <h3 className="pt-2">
@@ -13,9 +11,9 @@ const Media = () => {
             special needs
           </h3>
           <p className="pt-5">
-            To provide a safe and nurturing environment for abandoned children
-            and to facilitate the reintegration of abandoned children into
-            loving and stable families.
+            To provide a safe and nurturing environment for less privileged
+            children and to facilitate the reintegration of less privileged
+            children into loving and stable families.
           </p>
         </div>
 
@@ -40,7 +38,7 @@ const Media = () => {
             <p>
               Funds are allocated towards providing comprehensive care services,
               including education, healthcare, counseling, and recreational
-              activities, to meet the unique needs of abandoned children.
+              activities, to meet the unique needs of less privileged children.
             </p>
           </div>
           <div className="grid-items">
@@ -52,36 +50,29 @@ const Media = () => {
               ongoing healthcare support.
             </p>
           </div>
-          <div className="grid-items">
-            <h4>Adoption and Foster Care</h4>
-            <p>
-              Contributions are used to facilitate the adoption or foster care
-              placement of abandoned children into suitable families, ensuring
-              they find loving and stable homes.
-            </p>
-          </div>
+
           <div className="grid-items">
             <h4>Awareness Campaigns</h4>
             <p>
               A portion of the donations is allocated towards conducting
               awareness campaigns and educational programs to inform the public
-              about the consequences of child abandonment and advocate for
+              about the benefits of proper child upbringing and advocate for
               policy changes.
             </p>
           </div>
           <div className="grid-items">
-            <h4>Residential Homes</h4>
+            <h4>Orphanage Homes</h4>
             <p>
-              Donations are used to establish and operate safe and nurturing
-              residential homes for abandoned children, providing them with
-              shelter, food, and basic amenities.
+              Donations are used to support the orphanage home, providing them
+              with materials, food, and basic amenities, needed for day-to-day
+              activities and proper development of a child.
             </p>
           </div>
           <div className="grid-items">
             <h4>Public outreach</h4>
             <p>
               We organize various fundraising events throughout the year, this
-              way individuals can participate, join, support the progam and
+              way individuals can participate, join, support the programme and
               raise funds for our cause.
             </p>
           </div>
@@ -98,7 +89,6 @@ const Media = () => {
         </div>
 
         <div className="grid3">
-          
           <div className="grid-item">
             <Image
               id="team"
@@ -158,7 +148,24 @@ const Media = () => {
               alt="team photo"
             />
           </div>
-
+          <div className="grid-item">
+            <Image
+              id="team"
+              src="/assets/both.jpeg"
+              width={400}
+              height={250}
+              alt="team photo"
+            />
+          </div>
+          <div className="grid-item">
+            <Image
+              id="team"
+              src="/assets/bothGrp.jpeg"
+              width={400}
+              height={250}
+              alt="team photo"
+            />
+          </div>
         </div>
       </div>
     </div>
