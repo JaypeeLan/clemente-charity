@@ -12,8 +12,8 @@ const Media = () => {
           </h3>
           <p className="pt-5">
             To provide a safe and nurturing environment for less privileged
-            children and to facilitate the reintegration of less privileged
-            children into loving and stable families.
+            children and to facilitate the reintegration of these children into
+            loving and stable society.
           </p>
         </div>
 

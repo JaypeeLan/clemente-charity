@@ -13,7 +13,7 @@ const About = () => {
 
         <div className="grid-items">
           <h4 className="paragraph">
-            We are a dedicated organization founded to support abandoned
+            We are a dedicated organization founded to support less privileged
             children and their welfare. Our primary aim is to provide a safe and
             nurturing environment for these children, promoting their physical,
             emotional, and cognitive development.
@@ -21,8 +21,8 @@ const About = () => {
           <br />
           <p className="paragraph">
             We ensure that they have access to basic healthcare and nutrition.
-            Additionally, we raise awareness about child wellness and support
-            it. We strive to make a positive impact in the lives of abandoned
+            Additionally, we raise awareness about child wellness and support.
+            We strive to make a positive impact in the lives of less privileged
             children. With your support, we can continue to provide the love,
             care, and opportunities they deserve.
           </p>
@@ -70,7 +70,7 @@ const About = () => {
             <p>
               To provide a safe and nurturing environment for less privileged
               children and to facilitate the reintegration of these children
-              into loving and stable families.
+              into loving and stable society.
             </p>
           </div>
           <div className="grid-items">
@@ -100,9 +100,9 @@ const About = () => {
             <h4>Medicals</h4>
             <p>
               Collaborate with local hospitals, clinics, and healthcare
-              providers to ensure abandoned children receive necessary medical
-              attention and vaccinations. Provide comprehensive care and support
-              services, including education, healthcare, and counseling.
+              providers to ensure less privileged children receive necessary
+              medical attention and vaccinations. Provide comprehensive care and
+              support services, including education, healthcare, and counseling.
             </p>
           </div>
           <div className="grid-items">
@@ -110,10 +110,10 @@ const About = () => {
             <p>
               Conduct awareness campaigns and educational programs to inform the
               public about the consequences of child abandonment and the
-              importance of providing support to abandoned children. Advocate
-              for policy changes and reforms that address the root causes of
-              child abandonment and improve the welfare system for abandoned
-              children.
+              importance of providing support to less privileged children.
+              Advocate for policy changes and reforms that address the root
+              causes of child abandonment and improve the welfare system for
+              less privileged children.
             </p>
           </div>
           <div className="grid-items">
@@ -121,7 +121,7 @@ const About = () => {
             <p>
               Fundraise and seek financial support from individuals,
               corporations, and grant-making organizations to sustain and expand
-              the organizations services for abandoned children.
+              the organizations services for less privileged children.
             </p>
           </div>
           <div className="grid-items">

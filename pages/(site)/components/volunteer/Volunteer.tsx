@@ -43,7 +43,7 @@ const Volunteer = () => {
           transition={{ type: "spring", stiffness: 20 }}
         >
           <h2 className="chartside">
-            You can contribute to provide a place for children with special
+            You can contribute by providing support for children with special
             needs!
           </h2>
           <div className="contribute-btns pt-3">

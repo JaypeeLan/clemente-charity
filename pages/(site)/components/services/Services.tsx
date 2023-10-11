@@ -26,8 +26,8 @@ const Services = () => {
         <br />
         <p>
           To provide a safe and nurturing environment for less privileged
-          children and to facilitate the reintegration of abandoned children
-          into loving and stable environment.
+          children and to facilitate the reintegration of these children into
+          loving and stable society.
         </p>
         <br />
         <div>

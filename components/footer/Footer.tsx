@@ -43,7 +43,7 @@ const Footer = () => {
       <div className="footer-links mb-2">
         <h4 className="footer-links_heading"> Connect</h4>
         <div className="footer-links">
-          <Link href="clementecharityfoundation23@gmail.com">Email</Link>
+          <Link href="mailto:clementecharityfoundation23@gmail.com">Email</Link>
           <Link href="tel:+447825611810">Global line</Link>
 
           <Link href="tel:+2349095347896">Local line</Link>

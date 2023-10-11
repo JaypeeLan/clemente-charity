@@ -1,20 +1,18 @@
-import React from "react";
 import Image from "next/image";
-import Buttons from "../../components/buttons/Buttons";
 import Link from "next/link";
+import Buttons from "../../components/buttons/Buttons";
 
 const Donate = () => {
   return (
     <div>
       <div className="grid2 bg-gray">
-
         <div className="grid-items">
           <h3>DONATE</h3>
           <h4 className="pt-5">Make a donation for our children.</h4>
           <p className="pt-5">
             We Collaborate with other organizations, both locally and
             internationally, to share best practices and resources in supporting
-            abandoned children and their welfare.
+            less privileged children and their welfare.
           </p>
 
           <Link href={"/contact"}>
@@ -43,26 +41,22 @@ const Donate = () => {
           <p>
             Monetary Donations: Individuals can make monetary donations, either
             one-time or on a regular basis, to support the organizations
-            programs and services for abandoned children. Donors can contribute
-            in-kind donations such as clothing, toys, school supplies, and other
-            essential items for the children.
+            programs and services for less privileged children. Donors can
+            contribute in-kind donations such as clothing, toys, school
+            supplies, and other essential items for the children.
           </p>
         </div>
         <div className="grid-items">
           <p className="pb-2">
             Volunteer Opportunities: People can contribute their time and skills
-            by volunteering at our residential homes or supporting our events
-            and campaigns. Many companies offer matching gift programs where
-            they match their employees’ donations. Donors can check if their
-            employer has such a program and maximize their impact.
+            by volunteering at our charity outreach or supporting our events and
+            campaigns.{" "}
           </p>
           <p>
             Corporate Partnerships: Businesses can contribute through corporate
-            sponsorships, cause-related marketing campaigns, or by implementing
-            employee giving programs to support our organizations work.
-            Individuals can organize their own fundraising events or participate
-            in our organized events to raise funds and spread awareness about
-            the cause
+            sponsorships, cause-related marketing campaigns. Individuals can
+            organize their own fundraising events or participate in our
+            organized events to raise funds and spread awareness about the cause
           </p>
         </div>
       </div>
