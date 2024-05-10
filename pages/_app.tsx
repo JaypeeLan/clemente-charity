@@ -1,32 +1,39 @@
 // _app.tsx
 import Layout from "@/components/layout/Layout";
+import { seoData } from "@/seoData";
 import { motion } from "framer-motion";
-import { DefaultSeo } from "next-seo";
 import { AppProps } from "next/app";
 import { Raleway } from "next/font/google";
 import "../styles/main.scss";
 const raleway = Raleway({ subsets: ["latin"] });
 
 export default function MyApp({ Component, pageProps, router }: AppProps) {
+  // const router = useRouter()
+
+  const path = router.asPath.split("/")[1];
+  console.log("path", path);
+
+  const { keywords, content: description } =
+    seoData[path as keyof typeof seoData] || {};
   return (
     <div>
-      <DefaultSeo
-        title="Clemente Foundation"
-        description="Clemente Charity Foundation is a beacon of hope in a world filled with challenges and inequalities. We are dedicated to empowering and inspiring hope in underserved communities in Nigeria through comprehensive support, education, and community engagement. Join us in uplifting the lives of the less privileged and be part of the transformation."
-        openGraph={{
-          type: "website",
-          locale: "en_IE",
-          url: "https://www.clementecharityfoundation.com.ng/",
-          site_name: "Clemente Foundation",
-        }}
-      />
-      {/* <Head>
-        <title>Clemente Foundation</title>
+      <head>
+        <title>{`Clemente | ${path}`}</title>
+        <meta name="description" content={description} />
+        <meta name="keywords" content={keywords} />
+
+        {/* Open Graph data for Instagram (and Facebook) */}
+        {/* <meta property="og:title" content={`Clemente | ${path}`} /> */}
+        <meta property="og:type" content="website" />
         <meta
-          name="Charity foundation"
-          content="Donate to our NGO charity organization in Lagos, Nigeria and help make a difference."
+          property="og:url"
+          content="https://www.clementecharityfoundation.com.ng/"
         />
-      </Head> */}
+        <meta property="og:image" content="/assets/logo.png" />
+        <meta property="og:description" content={description} />
+        <meta property="og:site_name" content="clemente_charity_foundation" />
+        <link href="/imgs/logo.svg" rel="icon" type="image/svg" />
+      </head>
       <main className={raleway.className}>
         <Layout>
           <motion.div exit={{ opacity: 0 }} initial="initial" animate="animate">
